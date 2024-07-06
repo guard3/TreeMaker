@@ -5,7 +5,7 @@ Purpose:      Implementation file for tmConditionEdgesSameStrain class
 Author:       Robert J. Lang
 Modified by:  
 Created:      2003-12-04
-Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2003 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #include "tmConditionEdgesSameStrain.h"

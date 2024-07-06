@@ -5,7 +5,7 @@ Purpose:      Source file for node inspector panel
 Author:       Robert J. Lang
 Modified by:  
 Created:      2004-04-22
-Copyright:    ©2004 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2004 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #include "tmwxConditionNodeComboPanel.h"

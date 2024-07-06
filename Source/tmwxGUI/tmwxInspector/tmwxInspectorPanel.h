@@ -5,7 +5,7 @@ Purpose:      Header file for any panel that goes in a tool palette
 Author:       Robert J. Lang
 Modified by:  
 Created:      2005-12-07
-Copyright:    ©2005 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2005 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #ifndef _TMWXINSPECTORPANEL_H_

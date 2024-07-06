@@ -5,7 +5,7 @@ Purpose:      Header file for TreeMaker view settings frame
 Author:       Robert J. Lang
 Modified by:  
 Created:      2004-03-16
-Copyright:    ©2004 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2004 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #ifndef _TMWXVIEWSETTINGSFRAME_H_

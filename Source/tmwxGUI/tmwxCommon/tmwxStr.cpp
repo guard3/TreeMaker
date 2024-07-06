@@ -5,7 +5,7 @@ Purpose:      Implementation file for TreeMaker string reprentation fns
 Author:       Robert J. Lang
 Modified by:  
 Created:      2005-12-21
-Copyright:    ©2005 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2005 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #include "tmwxStr.h"

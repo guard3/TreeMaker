@@ -5,7 +5,7 @@ Purpose:      Header file for tmwxGetUserInputDialog class
 Author:       Robert J. Lang
 Modified by:  
 Created:      2005-12-11
-Copyright:    ©2005 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2005 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #ifndef _TMWXGETUSERINPUTDIALOG_H_

@@ -5,7 +5,7 @@ Purpose:      Implementation file for text control specialization
 Author:       Robert J. Lang
 Modified by:  
 Created:      2003-12-01
-Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2003 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #include "tmwxTextCtrl.h"

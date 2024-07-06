@@ -5,7 +5,7 @@ Purpose:      Implementation file for condition listing
 Author:       Robert J. Lang
 Modified by:  
 Created:      2003-11-27
-Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2003 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #include "tmwxConditionListBox.h"

@@ -5,7 +5,7 @@ Purpose:      For compiling predefined headers
 Author:       Robert J. Lang
 Modified by:  
 Created:      2005-11-02
-Copyright:    ©2005 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2005 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 /*

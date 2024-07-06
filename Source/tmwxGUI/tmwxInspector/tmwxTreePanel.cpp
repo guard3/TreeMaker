@@ -5,7 +5,7 @@ Purpose:      Source file for tree inspector panel
 Author:       Robert J. Lang
 Modified by:  
 Created:      20o3-11-27
-Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2003 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #include "tmwxTreePanel.h"

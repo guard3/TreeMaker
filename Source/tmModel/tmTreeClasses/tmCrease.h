@@ -5,7 +5,7 @@ Purpose:      Header file for tmCrease class
 Author:       Robert J. Lang
 Modified by:  
 Created:      2003-11-27
-Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2003 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #ifndef _TMCREASE_H_

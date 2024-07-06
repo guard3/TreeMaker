@@ -5,7 +5,7 @@ Purpose:      Source file for TreeMaker document manager class
 Author:       Robert J. Lang
 Modified by:  
 Created:      2005-11-30
-Copyright:    ©2005 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2005 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #include "tmwxDocManager.h"

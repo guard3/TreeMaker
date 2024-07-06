@@ -5,7 +5,7 @@ Purpose:      Header file for the tmStubFinder class
 Author:       Robert J. Lang
 Modified by:  
 Created:      2004-01-04
-Copyright:    ©2004 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2004 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #ifndef _TMSTUBFINDER_H_

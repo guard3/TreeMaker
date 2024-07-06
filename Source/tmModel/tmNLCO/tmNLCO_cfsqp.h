@@ -5,7 +5,7 @@ Purpose:      Header file for CFSQP-based constrained optimizer class
 Author:       Robert J. Lang
 Modified by:  
 Created:      2004-03-03
-Copyright:    ©2004 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2004 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #ifndef _TMNLCO_CFSQP_H_

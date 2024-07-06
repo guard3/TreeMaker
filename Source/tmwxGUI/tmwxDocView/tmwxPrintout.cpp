@@ -5,7 +5,7 @@ Purpose:      Source file for TreeMaker printout class
 Author:       Robert J. Lang
 Modified by:  
 Created:      2004-06-21
-Copyright:    ©2004 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2004 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #include "tmwxPrintout.h"

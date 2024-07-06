@@ -6,9 +6,9 @@ Author:       Carlos A. Furuti (adapting wxGTK dialog to TM5's model
                 for event handling during long computation)
 Modified by:  
 Created:      2004-04-22
-Copyright:    ©1998 Robert Roebling (original wxGTK code, released
+Copyright:    Â©1998 Robert Roebling (original wxGTK code, released
                 under the wxWidgets license)
-Copyright:    ©2004 Carlos A. Furuti. All Rights Reserved.
+Copyright:    Â©2004 Carlos A. Furuti. All Rights Reserved.
 *******************************************************************************/
 
 #ifdef __WXGTK__

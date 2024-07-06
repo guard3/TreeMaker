@@ -5,7 +5,7 @@ Purpose:      Source file for tmConditionNodeSymmetric inspector panel
 Author:       Robert J. Lang
 Modified by:  
 Created:      2003-12-22
-Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2003 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #include "tmwxConditionNodeSymmetricPanel.h"

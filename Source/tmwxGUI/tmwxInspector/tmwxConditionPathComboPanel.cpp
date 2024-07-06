@@ -5,7 +5,7 @@ Purpose:      Source file for tmConditionPathCombo inspector panel
 Author:       Robert J. Lang
 Modified by:  
 Created:      2005-12-10
-Copyright:    ©2005 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2005 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #include "tmwxConditionPathComboPanel.h"

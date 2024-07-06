@@ -5,7 +5,7 @@ Purpose:      Implementation file for class tmwxLogFrame
 Author:       Robert J. Lang
 Modified by:  
 Created:      2005-02-19
-Copyright:    ©2005 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2005 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #include "tmModel.h"

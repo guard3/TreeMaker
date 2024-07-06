@@ -5,7 +5,7 @@ Purpose:      Implementation file for RFSQP-based constrained optimizer class
 Author:       Robert J. Lang
 Modified by:  
 Created:      2004-05-29
-Copyright:    ©2004 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2004 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 /*  tmNLCO_rfsqp is a C++ object that encapsulates Lawrence/Tits RFSQP C code

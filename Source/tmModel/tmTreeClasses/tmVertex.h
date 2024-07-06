@@ -5,7 +5,7 @@ Purpose:      Header file for tmVertex class
 Author:       Robert J. Lang
 Modified by:  
 Created:      2003-11-25
-Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2003 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #ifndef _TMVERTEX_H_

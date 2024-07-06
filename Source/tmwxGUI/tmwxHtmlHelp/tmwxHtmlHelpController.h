@@ -5,7 +5,7 @@ Purpose:      Header file for TreeMaker help controller class
 Author:       Robert J. Lang
 Modified by:  
 Created:      2005-11-23
-Copyright:    ©2005 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2005 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #ifndef _TMWXHTMLHELPCONTROLLER_H_

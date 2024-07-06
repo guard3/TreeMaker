@@ -5,7 +5,7 @@ Purpose:      Forward declarations of all model classes
 Author:       Robert J. Lang
 Modified by:  
 Created:      2004-05-01
-Copyright:    ©2004 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2004 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #ifndef _TMMODEL_FWD_H_

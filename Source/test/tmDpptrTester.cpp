@@ -5,7 +5,7 @@ Purpose:      Test application for the tmDpptr and tmDpptrArray container classe
 Author:       Robert J. Lang
 Modified by:  
 Created:      2005-09-27
-Copyright:    ©2005 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2005 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #include <iostream>

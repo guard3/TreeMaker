@@ -5,7 +5,7 @@ Purpose:      Header file for class tmwxFoldedFormFrame
 Author:       Robert J. Lang
 Modified by:  
 Created:      2004-05-27
-Copyright:    ©2004 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2004 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #ifndef _TMWXFOLDEDFORMFRAME_H_

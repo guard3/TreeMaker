@@ -5,7 +5,7 @@ Purpose:      Source file for poly inspector panel
 Author:       Robert J. Lang
 Modified by:  
 Created:      2003-12-20
-Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2003 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #include "tmwxPolyPanel.h"

@@ -5,7 +5,7 @@ Purpose:      Implementation file for small static text displaying part informat
 Author:       Robert J. Lang
 Modified by:  
 Created:      2003-11-29
-Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2003 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #include "tmwxStaticText.h"

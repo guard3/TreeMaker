@@ -5,7 +5,7 @@ Purpose:      Source file for TreeMaker document class, Edit menu commands
 Author:       Robert J. Lang
 Modified by:  
 Created:      2005-12-10
-Copyright:    ©2005 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2005 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #include "tmwxDoc.h"

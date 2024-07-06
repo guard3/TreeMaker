@@ -5,7 +5,7 @@ Purpose:      Defines failed assertion behavior for Development builds
 Author:       Robert J. Lang
 Modified by:  
 Created:      2005-08-24
-Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2003 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 #include "tmHeader.h"
 #ifdef TMWX

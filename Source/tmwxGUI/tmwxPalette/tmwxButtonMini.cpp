@@ -5,7 +5,7 @@ Purpose:      Implementation file for tiniest button
 Author:       Robert J. Lang
 Modified by:  
 Created:      2004-08-01
-Copyright:    ©2004 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2004 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #include "tmwxButtonMini.h"

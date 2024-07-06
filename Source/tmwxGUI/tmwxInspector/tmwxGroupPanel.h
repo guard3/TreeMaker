@@ -5,7 +5,7 @@ Purpose:      Header file for group selection panel
 Author:       Robert J. Lang
 Modified by:  
 Created:      2004-04-20
-Copyright:    ©2004 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2004 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #ifndef _TMWXGROUPPANEL_H_

@@ -5,7 +5,7 @@ Purpose:      Header file for facet inspector panel
 Author:       Robert J. Lang
 Modified by:  
 Created:      2004-05-28
-Copyright:    ©2004 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2004 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #ifndef _TMWXFACETPANEL_H_

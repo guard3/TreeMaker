@@ -5,7 +5,7 @@ Purpose:      Header file for tmConditionOwner class
 Author:       Robert J. Lang
 Modified by:  
 Created:      2004-06-14
-Copyright:    ©2004 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2004 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #ifndef _TMCONDITIONOWNER_H_

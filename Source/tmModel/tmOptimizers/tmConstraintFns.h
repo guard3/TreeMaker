@@ -5,7 +5,7 @@ Purpose:      Header file for tmConstraintFns class
 Author:       Robert J. Lang
 Modified by:  
 Created:      2004-03-03
-Copyright:    ©2004 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2004 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #ifndef _TMCONSTRAINTFNS_H_

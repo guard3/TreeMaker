@@ -6,9 +6,9 @@ Purpose:      Source file for class tmwxOptimizerDialog, specialization for Mac
 Author:       Stefan Csomor
 Modified by:  Robert J. Lang
 Created:     (original), 2004-04-22 (modifications)
-Copyright (original):       ©2004 by Stefan Csomor, 
+Copyright (original):       Â©2004 by Stefan Csomor, 
                               released under the wxWidgets license
-Copyright (modifications):  ©2004 Robert J. Lang. All Rights Reserved.
+Copyright (modifications):  Â©2004 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #ifdef __WXMAC__

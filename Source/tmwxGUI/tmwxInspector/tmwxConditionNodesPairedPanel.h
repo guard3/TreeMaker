@@ -5,7 +5,7 @@ Purpose:      Header file for tmConditionNodesPaired inspector panel
 Author:       Robert J. Lang
 Modified by:  
 Created:      2003-12-21
-Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2003 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #ifndef _TMWXCONDITIONNODESPAIREDPANEL_H_

@@ -5,7 +5,7 @@ Purpose:      Header file for RFSQP-based constrained optimizer class
 Author:       Robert J. Lang
 Modified by:  
 Created:      2004-05-27
-Copyright:    ©2004 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2004 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #ifndef _TMNLCO_RFSQP_H_

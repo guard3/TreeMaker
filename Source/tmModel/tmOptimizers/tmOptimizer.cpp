@@ -5,7 +5,7 @@ Purpose:      Implementation file for tmOptimizer base class
 Author:       Robert J. Lang
 Modified by:  
 Created:      2005-09-13
-Copyright:    ©2005 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2005 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #include "tmOptimizer.h"

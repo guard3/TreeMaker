@@ -5,7 +5,7 @@ Purpose:      Header file for small radio box
 Author:       Robert J. Lang
 Modified by:  
 Created:      2005-08-31
-Copyright:    ©2005 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2005 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #ifndef _TMWXRADIOBOXSMALL_H_

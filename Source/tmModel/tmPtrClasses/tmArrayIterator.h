@@ -5,7 +5,7 @@ Purpose:      Header file for TreeMaker array iterator classe
 Author:       Robert J. Lang
 Modified by:  
 Created:      2003-11-15
-Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2003 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #ifndef _TMARRAYITERATOR_H_

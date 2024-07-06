@@ -5,7 +5,7 @@ Purpose:      Header file that defines the TreeMaker optimizer
 Author:       Robert J. Lang
 Modified by:  
 Created:      2004-03-14
-Copyright:    ©2004 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2004 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #ifndef _TMNLCO_H_

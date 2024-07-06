@@ -5,7 +5,7 @@ Purpose:      Implementation file for tmFacet class
 Author:       Robert J. Lang
 Modified by:  
 Created:      2004-04-24
-Copyright:    ©2004 Robert J. Lang. All Rights Reserved.
+Copyright:    Â©2004 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
 
 #include "tmFacet.h"
