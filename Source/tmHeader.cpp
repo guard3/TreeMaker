@@ -3,7 +3,7 @@ File:         tmHeader.cpp
 Project:      TreeMaker 5.x
 Purpose:      Defines failed assertion behavior for Development builds
 Author:       Robert J. Lang
-Modified by:  
+Modified by:  Konstantinos Bolosis
 Created:      2005-08-24
 Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
@@ -13,6 +13,7 @@ Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
   #include "tmwxLogFrame.h"
 #endif // TMWX
 
+#include <cmath>
 #include <cstdlib>
 #include <string>
 #include <iostream>
@@ -195,11 +196,10 @@ NAN DETECTION FUNCTIONS
 Check for NaN in debug builds
 **********/
 #ifdef TMDEBUG
-  void tmCheckNaN(double x) {
-    if (isnan(x)) {
-//     if (!(x == x)) { // use this if your compiler doesn't have isnan()
-      // TBD, generate exception, or break here
-      TMLOG("NaN encountered!");
-    }
-  }
+void tmCheckNaN(double x) {
+	if (std::isnan(x)) {
+		// TBD, generate exception, or break here
+		TMLOG("NaN encountered!");
+	}
+}
 #endif // TMDEBUG

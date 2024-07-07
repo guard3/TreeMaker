@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 42;
+	objectVersion = 45;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -502,7 +502,7 @@
 		C08A828808BBF008008508CD /* tmHeader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = tmHeader.h; sourceTree = "<group>"; };
 		C08A846D08BC22E8008508CD /* tmModel_fwd.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tmModel_fwd.h; path = tmModel/tmModel_fwd.h; sourceTree = "<group>"; };
 		C08A846E08BC22E8008508CD /* tmModel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tmModel.h; path = tmModel/tmModel.h; sourceTree = "<group>"; };
-		C08A84E708BC2367008508CD /* tmArray.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = tmArray.h; sourceTree = "<group>"; };
+		C08A84E708BC2367008508CD /* tmArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tmArray.h; sourceTree = "<group>"; usesTabs = 1; };
 		C08A84E808BC2367008508CD /* tmArrayIterator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = tmArrayIterator.h; sourceTree = "<group>"; };
 		C08A84E908BC2367008508CD /* tmDpptr.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = tmDpptr.h; sourceTree = "<group>"; };
 		C08A84EA08BC2367008508CD /* tmDpptrArray.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = tmDpptrArray.h; sourceTree = "<group>"; };
@@ -512,7 +512,7 @@
 		C08A84EE08BC2367008508CD /* tmPtrClasses.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = tmPtrClasses.h; sourceTree = "<group>"; };
 		C099402608EF5C17002E8E42 /* SplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashScreen.png; sourceTree = "<group>"; };
 		C0A5289708E68DAE004D958F /* tmArrayTester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tmArrayTester; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0A528A108E68E05004D958F /* tmArrayTester.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = tmArrayTester.cpp; path = test/tmArrayTester.cpp; sourceTree = "<group>"; };
+		C0A528A108E68E05004D958F /* tmArrayTester.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tmArrayTester.cpp; path = test/tmArrayTester.cpp; sourceTree = "<group>"; usesTabs = 1; };
 		C0A528AC08E68E6F004D958F /* tmDpptrTester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tmDpptrTester; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A528B008E68E8D004D958F /* tmDpptrTester.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = tmDpptrTester.cpp; path = test/tmDpptrTester.cpp; sourceTree = "<group>"; };
 		C0A528CF08E69046004D958F /* tmNLCOTester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tmNLCOTester; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -601,16 +601,16 @@
 		C0A5297F08E69472004D958F /* wnvnrm.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = wnvnrm.c; sourceTree = "<group>"; };
 		C0A5298108E69472004D958F /* wnvprn.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = wnvprn.c; sourceTree = "<group>"; };
 		C0B0670D0937CD61006C8423 /* about.htm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; path = about.htm; sourceTree = "<group>"; };
-		C0C9A89308BD198900ADCE48 /* tmHeader.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = tmHeader.cpp; sourceTree = "<group>"; };
+		C0C9A89308BD198900ADCE48 /* tmHeader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tmHeader.cpp; sourceTree = "<group>"; usesTabs = 1; };
 		C0C9A8F808BD239A00ADCE48 /* Icon_app.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon_app.icns; sourceTree = "<group>"; };
 		C0C9A8F908BD239A00ADCE48 /* Icon_doc.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon_doc.icns; sourceTree = "<group>"; };
 		C0D0D05E0935746100DC38CA /* tmwxHtmlHelpController.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = tmwxHtmlHelpController.cpp; path = tmwxHtmlHelp/tmwxHtmlHelpController.cpp; sourceTree = "<group>"; };
 		C0D0D05F0935746100DC38CA /* tmwxHtmlHelpFrame.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tmwxHtmlHelpFrame.h; path = tmwxHtmlHelp/tmwxHtmlHelpFrame.h; sourceTree = "<group>"; };
 		C0D0D0600935746100DC38CA /* tmwxHtmlHelpFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = tmwxHtmlHelpFrame.cpp; path = tmwxHtmlHelp/tmwxHtmlHelpFrame.cpp; sourceTree = "<group>"; };
 		C0D0D0610935746100DC38CA /* tmwxHtmlHelpController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tmwxHtmlHelpController.h; path = tmwxHtmlHelp/tmwxHtmlHelpController.h; sourceTree = "<group>"; };
-		C0D24035099E6DBB00436EFE /* treemaker.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = treemaker.plist; sourceTree = "<group>"; };
+		C0D24035099E6DBB00436EFE /* treemaker.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = treemaker.plist; sourceTree = "<group>"; };
 		C0D24048099E70F900436EFE /* libwx_mac_static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwx_mac_static.a; path = "build/wxMac-2.6/src/build/Deployment/libwx_mac_static.a"; sourceTree = "<group>"; };
-		C0DD440A0865BDEB00AE35AB /* TreeMaker 5.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "TreeMaker 5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0DD440A0865BDEB00AE35AB /* TreeMaker 5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TreeMaker 5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0DD447F0865C42C00AE35AB /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		C0DD44840865C45500AE35AB /* System.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = System.framework; path = /System/Library/Frameworks/System.framework; sourceTree = "<absolute>"; };
 		C0E6FDE709390BD400E12748 /* help.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = help.zip; path = build/TreeMaker.build/help/help.zip; sourceTree = SOURCE_ROOT; };
@@ -1477,11 +1477,21 @@
 /* Begin PBXProject section */
 		C0DD43FE0865BDAA00AE35AB /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1420;
+			};
 			buildConfigurationList = C0DD43FF0865BDAA00AE35AB /* Build configuration list for PBXProject "TreeMaker" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
 			mainGroup = C0DD43FC0865BDA900AE35AB;
 			productRefGroup = C0DD440B0865BDEB00AE35AB /* Products */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				C0A5289608E68DAE004D958F /* tmArrayTester */,
 				C0A528AB08E68E6F004D958F /* tmDpptrTester */,
@@ -1828,7 +1838,8 @@
 		C01AD0F208B971D600F2EEB3 /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_DEBUGGING_SYMBOLS = full;
@@ -1856,6 +1867,7 @@
 				INFOPLIST_PREPROCESS = YES;
 				INSTALL_PATH = "$(USER_APPS_DIR)";
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/build/wxMac-2.6/src/build/Deployment";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MAC_OSX_DEPLOYMENT_TARGET_i386 = 10.4;
 				MAC_OSX_DEPLOYMENT_TARGET_ppc = 10.3;
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
@@ -1867,9 +1879,9 @@
 					"-liconv",
 					"-lz",
 				);
-				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.langorigami.TreeMaker;
 				PRODUCT_NAME = "TreeMaker 5";
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 				SECTORDER_FLAGS = "";
 				USER_HEADER_SEARCH_PATHS = "$(SYMROOT)/wxMac-2.6/include $(SYMROOT)/wxMac-2.6/src/build/include $(SRCROOT)/../Source/** $(SDKROOT)/usr/include/malloc";
 				WARNING_CFLAGS = (
@@ -1883,19 +1895,45 @@
 		C01AD0F308B971D600F2EEB3 /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
-				GCC_VERSION_i386 = 4.0;
-				GCC_VERSION_ppc = 3.3;
-				MACOSX_DEPLOYMENT_TARGET = 10.3;
-				MAC_OSX_DEPLOYMENT_TARGET_i386 = 10.4;
-				MAC_OSX_DEPLOYMENT_TARGET_ppc = 10.3;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				SDKROOT = macosx;
 			};
 			name = Profile;
 		};
 		C01BFEEA08E6B1F800D2B685 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_DEBUGGING_SYMBOLS = full;
@@ -1909,12 +1947,12 @@
 					/usr/include/malloc,
 				);
 				INSTALL_PATH = "$(HOME)/bin";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "-DTMDEBUG";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = tmModelTester;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -1928,6 +1966,8 @@
 		C01BFEEB08E6B1F800D2B685 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_DEBUGGING_SYMBOLS = full;
@@ -1941,12 +1981,12 @@
 					/usr/include/malloc,
 				);
 				INSTALL_PATH = "$(HOME)/bin";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "-DTMDEBUG";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = tmModelTester;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -1960,10 +2000,8 @@
 		C01BFEEC08E6B1F800D2B685 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -1975,12 +2013,12 @@
 					/usr/include/malloc,
 				);
 				INSTALL_PATH = "$(HOME)/bin";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = tmModelTester;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -1994,10 +2032,8 @@
 		C01BFEED08E6B1F800D2B685 /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				DEAD_CODE_STRIPPING = YES;
 				GCC_DEBUGGING_SYMBOLS = full;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -2009,12 +2045,12 @@
 					/usr/include/malloc,
 				);
 				INSTALL_PATH = "$(HOME)/bin";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "-DTMPROFILE";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = tmModelTester;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -2028,6 +2064,8 @@
 		C086403508EB06CA00EEE5CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_DEBUGGING_SYMBOLS = full;
@@ -2036,12 +2074,12 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/Source/**";
 				INSTALL_PATH = "$(HOME)/bin";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "-DTMDEBUG";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = tmNewtonRaphsonTester;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -2055,6 +2093,8 @@
 		C086403608EB06CA00EEE5CD /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_DEBUGGING_SYMBOLS = full;
@@ -2063,12 +2103,12 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/Source/**";
 				INSTALL_PATH = "$(HOME)/bin";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "-DTMDEBUG";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = tmNewtonRaphsonTester;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -2082,22 +2122,20 @@
 		C086403708EB06CA00EEE5CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/Source/**";
 				INSTALL_PATH = "$(HOME)/bin";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = tmNewtonRaphsonTester;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -2111,22 +2149,20 @@
 		C086403808EB06CA00EEE5CD /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				DEAD_CODE_STRIPPING = YES;
 				GCC_DEBUGGING_SYMBOLS = full;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/Source/**";
 				INSTALL_PATH = "$(HOME)/bin";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "-DTMPROFILE";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = tmNewtonRaphsonTester;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -2140,6 +2176,8 @@
 		C0A5289A08E68DCD004D958F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_DEBUGGING_SYMBOLS = full;
@@ -2151,11 +2189,11 @@
 				GCC_VERSION_i386 = 4.0;
 				GCC_VERSION_ppc = 3.3;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "-DTMDEBUG";
 				OTHER_LDFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = tmArrayTester;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -2169,6 +2207,8 @@
 		C0A5289B08E68DCD004D958F /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_DEBUGGING_SYMBOLS = full;
@@ -2180,11 +2220,11 @@
 				GCC_VERSION_i386 = 4.0;
 				GCC_VERSION_ppc = 3.3;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "-DTMDEBUG";
 				OTHER_LDFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = tmArrayTester;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -2198,10 +2238,8 @@
 		C0A5289C08E68DCD004D958F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -2211,11 +2249,11 @@
 				GCC_VERSION_i386 = 4.0;
 				GCC_VERSION_ppc = 3.3;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = tmArrayTester;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -2229,10 +2267,8 @@
 		C0A5289D08E68DCD004D958F /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				DEAD_CODE_STRIPPING = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
@@ -2241,11 +2277,11 @@
 				GCC_VERSION_i386 = 4.0;
 				GCC_VERSION_ppc = 3.3;
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "-DTMPROFILE";
 				OTHER_LDFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = tmArrayTester;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -2259,6 +2295,8 @@
 		C0A528B308E68E8E004D958F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_DEBUGGING_SYMBOLS = full;
@@ -2268,12 +2306,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PREFIX_HEADER)";
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "-DTMDEBUG";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = tmDpptrTester;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -2287,6 +2325,8 @@
 		C0A528B408E68E8E004D958F /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_DEBUGGING_SYMBOLS = full;
@@ -2296,12 +2336,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PREFIX_HEADER)";
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "-DTMDEBUG";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = tmDpptrTester;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -2315,10 +2355,8 @@
 		C0A528B508E68E8E004D958F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -2326,12 +2364,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PREFIX_HEADER)";
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = tmDpptrTester;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -2345,10 +2383,8 @@
 		C0A528B608E68E8E004D958F /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				DEAD_CODE_STRIPPING = YES;
 				GCC_DEBUGGING_SYMBOLS = full;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -2356,12 +2392,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PREFIX_HEADER)";
 				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "-DTMPROFILE";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = tmDpptrTester;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -2375,6 +2411,8 @@
 		C0A528D608E69099004D958F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_DEBUGGING_SYMBOLS = full;
@@ -2386,12 +2424,12 @@
 					/usr/include/malloc,
 				);
 				INSTALL_PATH = "$(HOME)/bin";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "-DTMDEBUG";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = tmNLCOTester;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -2405,6 +2443,8 @@
 		C0A528D708E69099004D958F /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_DEBUGGING_SYMBOLS = full;
@@ -2416,12 +2456,12 @@
 					/usr/include/malloc,
 				);
 				INSTALL_PATH = "$(HOME)/bin";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "-DTMDEBUG";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = tmNLCOTester;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -2435,10 +2475,8 @@
 		C0A528D808E69099004D958F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -2448,12 +2486,12 @@
 					/usr/include/malloc,
 				);
 				INSTALL_PATH = "$(HOME)/bin";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = tmNLCOTester;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -2467,10 +2505,8 @@
 		C0A528D908E69099004D958F /* Profile */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				DEAD_CODE_STRIPPING = YES;
 				GCC_DEBUGGING_SYMBOLS = full;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -2480,12 +2516,12 @@
 					/usr/include/malloc,
 				);
 				INSTALL_PATH = "$(HOME)/bin";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "-DTMPROFILE";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
 				PRODUCT_NAME = tmNLCOTester;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -2499,33 +2535,84 @@
 		C0DD44000865BDAA00AE35AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				GCC_VERSION_i386 = 4.0;
-				GCC_VERSION_ppc = 3.3;
-				MACOSX_DEPLOYMENT_TARGET = 10.3;
-				MAC_OSX_DEPLOYMENT_TARGET_i386 = 10.4;
-				MAC_OSX_DEPLOYMENT_TARGET_ppc = 10.3;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		C0DD44010865BDAA00AE35AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
-				GCC_VERSION_i386 = 4.0;
-				GCC_VERSION_ppc = 3.3;
-				MACOSX_DEPLOYMENT_TARGET = 10.3;
-				MAC_OSX_DEPLOYMENT_TARGET_i386 = 10.4;
-				MAC_OSX_DEPLOYMENT_TARGET_ppc = 10.3;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
 		C0DD440F0865BDEE00AE35AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_DEBUGGING_SYMBOLS = full;
@@ -2557,6 +2644,7 @@
 					"$(SRCROOT)/build/wxMac-2.6/src/build/Development",
 					"$(SRCROOT)/build/wxMac-2.6/src/build/Deployment",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MAC_OSX_DEPLOYMENT_TARGET_i386 = 10.4;
 				MAC_OSX_DEPLOYMENT_TARGET_ppc = 10.3;
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
@@ -2565,9 +2653,9 @@
 					"-liconv",
 					"-lz",
 				);
-				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.langorigami.TreeMaker;
 				PRODUCT_NAME = "TreeMaker 5";
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 				SECTORDER_FLAGS = "";
 				USER_HEADER_SEARCH_PATHS = "$(SYMROOT)/wxMac-2.6/include $(SYMROOT)/wxMac-2.6/src/build/include $(SRCROOT)/../Source/** $(SDKROOT)/usr/include/malloc";
 				WARNING_CFLAGS = (
@@ -2582,10 +2670,8 @@
 		C0DD44100865BDEE00AE35AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
@@ -2613,6 +2699,7 @@
 				INFOPLIST_PREPROCESS = YES;
 				INSTALL_PATH = "$(USER_APPS_DIR)";
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/build/wxMac-2.6/src/build/Deployment";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MAC_OSX_DEPLOYMENT_TARGET_i386 = 10.4;
 				MAC_OSX_DEPLOYMENT_TARGET_ppc = 10.3;
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
@@ -2621,10 +2708,10 @@
 					"-liconv",
 					"-lz",
 				);
-				PREBINDING = NO;
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.langorigami.TreeMaker;
 				PRODUCT_NAME = "TreeMaker 5";
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 				SECTORDER_FLAGS = "";
 				SEPARATE_STRIP = YES;
 				STRIP_INSTALLED_PRODUCT = YES;
@@ -2640,10 +2727,8 @@
 		C0DD44110865BE2E00AE35AB /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_DEBUGGING_SYMBOLS = full;
@@ -2671,6 +2756,7 @@
 				INFOPLIST_PREPROCESS = YES;
 				INSTALL_PATH = "$(USER_APPS_DIR)";
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/build/wxMac-2.6/src/build/Deployment";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MAC_OSX_DEPLOYMENT_TARGET_i386 = 10.4;
 				MAC_OSX_DEPLOYMENT_TARGET_ppc = 10.3;
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
@@ -2682,9 +2768,9 @@
 					"-liconv",
 					"-lz",
 				);
-				PREBINDING = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.langorigami.TreeMaker;
 				PRODUCT_NAME = "TreeMaker 5";
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
 				SECTORDER_FLAGS = "";
 				USER_HEADER_SEARCH_PATHS = "$(SYMROOT)/wxMac-2.6/include $(SYMROOT)/wxMac-2.6/src/build/include $(SRCROOT)/../Source/** $(SDKROOT)/usr/include/malloc";
 				WARNING_CFLAGS = (
@@ -2699,13 +2785,39 @@
 		C0DD44120865BE2E00AE35AB /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				GCC_VERSION_i386 = 4.0;
-				GCC_VERSION_ppc = 3.3;
-				MACOSX_DEPLOYMENT_TARGET = 10.3;
-				MAC_OSX_DEPLOYMENT_TARGET_i386 = 10.4;
-				MAC_OSX_DEPLOYMENT_TARGET_ppc = 10.3;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
 			};
 			name = Development;
 		};

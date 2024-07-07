@@ -3,7 +3,7 @@ File:         tmArray.h
 Project:      TreeMaker 5.x
 Purpose:      Header file for general-purpose TreeMaker container class
 Author:       Robert J. Lang
-Modified by:  
+Modified by:  Konstantinos Bolosis
 Created:      2003-11-15
 Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
@@ -169,9 +169,8 @@ T& tmArray<T>::NthItem(std::size_t n)
 Add an element to the beginning of the list
 *****/
 template <class T>
-void tmArray<T>::push_front(const T& t)
-{
-  insert(this->begin(), t);
+inline void tmArray<T>::push_front(const T& t) {
+	this->insert(this->begin(), t);
 }
 
 
@@ -180,9 +179,9 @@ void tmArray<T>::push_front(const T& t)
 Add an element to the list if it isn't already there
 *****/
 template <class T>
-void tmArray<T>::union_with(const T& t)
-{
-  if (find(this->begin(), this->end(), t) == this->end()) push_back(t);
+inline void tmArray<T>::union_with(const T& t) {
+	if (std::find(this->begin(), this->end(), t) == this->end())
+		this->push_back(t);
 }
 
 
@@ -215,9 +214,8 @@ tmArray<T>& tmArray<T>::RemoveItemAt(std::size_t n)
 Remove an item from a list given its value
 *****/
 template <class T>
-void tmArray<T>::erase_remove(const T& t)
-{
-  erase(remove(this->begin(), this->end(), t), this->end());
+inline void tmArray<T>::erase_remove(const T& t) {
+	this->erase(std::remove(this->begin(), this->end(), t), this->end());
 }
 
 
