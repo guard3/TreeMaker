@@ -203,10 +203,9 @@ std::size_t tmArray<T>::GetIndex(const T& t) const
 Remove an item from a list given its index
 *****/
 template <class T>
-tmArray<T>& tmArray<T>::RemoveItemAt(std::size_t n)
-{
-  erase(this->begin() + ptrdiff_t(n) - 1);
-  return *this;
+tmArray<T>& tmArray<T>::RemoveItemAt(std::size_t n) {
+	this->erase(this->begin() + std::ptrdiff_t(n) - 1);
+	return *this;
 }
 
 
@@ -235,11 +234,10 @@ void tmArray<T>::replace_with(const T& told, const T& tnew)
 Insert an item at a specified index
 *****/
 template <class T>
-tmArray<T>& tmArray<T>::InsertItemAt(std::size_t n, const T& t)
-{
-  TMASSERT(n > 0); // 1-based indexing
-  insert(this->begin() + ptrdiff_t(n) - 1, t);
-  return *this;
+tmArray<T>& tmArray<T>::InsertItemAt(std::size_t n, const T& t) {
+	TMASSERT(n > 0); // 1-based indexing
+	this->insert(this->begin() + ptrdiff_t(n) - 1, t);
+	return *this;
 }
 
 
@@ -287,12 +285,12 @@ void tmArray<T>::MoveItem(std::size_t inFromIndex, std::size_t inToIndex)
 Rotate all items toward the front of the array by one position.
 *****/
 template <class T>
-void tmArray<T>::rotate_left()
-{
-  if (this->empty()) return;
-  T t = this->front();
-  erase(this->begin());
-  this->push_back(t);
+void tmArray<T>::rotate_left() {
+	if (this->size() <= 1)
+		return;
+	T t = this->front();
+	this->erase(this->begin());
+	this->push_back(t);
 }
 
 
@@ -300,12 +298,12 @@ void tmArray<T>::rotate_left()
 Rotate all items toward the back of the array by one position.
 *****/
 template <class T>
-void tmArray<T>::rotate_right()
-{
-  if (this->empty()) return;
-  T t = this->back();
-  erase(this->rbegin());
-  this->push_front(t);
+void tmArray<T>::rotate_right() {
+	if (this->size() <= 1)
+		return;
+	T t = this->back();
+	this->pop_back();
+	this->push_front(t);
 }
 
 
@@ -327,9 +325,8 @@ Append all elements of another list
 *****/
 
 template <class T>
-void tmArray<T>::merge_with(const tmArray<T>& aList)
-{
-  insert(this->end(), aList.begin(), aList.end());
+void tmArray<T>::merge_with(const tmArray<T>& aList) {
+	this->insert(this->end(), aList.begin(), aList.end());
 }
 
 

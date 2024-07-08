@@ -3,7 +3,7 @@ File:         tmNode.cpp
 Project:      TreeMaker 5.x
 Purpose:      Implementation file for class tmNode
 Author:       Robert J. Lang
-Modified by:  
+Modified by:  Konstantinos Bolosis
 Created:      2003-11-25
 Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
@@ -277,10 +277,10 @@ tmVertex* tmNode::GetVertex() const
 /*****
 Return the number of polygon paths incident upon this tmNode.
 *****/
-size_t tmNode::GetNumPolygonPaths() const
-{
-  return count_if(mLeafPaths.begin(), mLeafPaths.end(),
-    mem_fun(&tmPath::IsPolygonPath));
+size_t tmNode::GetNumPolygonPaths() const {
+	return std::count_if(mLeafPaths.begin(), mLeafPaths.end(), [](const tmPath* path) {
+		return path->IsPolygonPath();
+	});
 }
 
 

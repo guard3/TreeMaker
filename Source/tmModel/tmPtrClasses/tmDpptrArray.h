@@ -3,7 +3,7 @@ File:         tmDpptrArray.h
 Project:      TreeMaker 5.x
 Purpose:      Header file for dangle-proof array of pointers
 Author:       Robert J. Lang
-Modified by:  
+Modified by:  Konstantinos Bolosis
 Created:      2003-11-15
 Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
@@ -139,21 +139,6 @@ private:
 
 
 /**********
-class DpptrTarget_EqualTo<T>
-A predicate class used to compare T* to tmDpptrTarget*
-**********/
-template <class T>
-class DpptrTarget_EqualTo {
-  typedef tmDpptrTarget* r_ptr;  // ptr to tmDpptrTarget
-  typedef T* t_ptr;        // ptr to T
-  r_ptr mDpptrTarget;        // ptr to the tmDpptrTarget being compared to
-public:
-  DpptrTarget_EqualTo(const r_ptr& aDpptrTarget) : mDpptrTarget(aDpptrTarget) {};
-  bool operator() (const t_ptr& ptr) const {return r_ptr(ptr) == mDpptrTarget;};
-};
-
-
-/**********
 Template definitions
 **********/
 
@@ -238,9 +223,9 @@ Add this object to the list if it isn't there already and tell it we're now
 referencing it
 *****/
 template <class T>
-void tmDpptrArray<T>::union_with(T* pt)
-{
-  if (!contains(pt)) push_back(pt);
+void tmDpptrArray<T>::union_with(T* pt) {
+	if (!this->contains(pt))
+		push_back(pt);
 }
 
 
@@ -248,12 +233,11 @@ void tmDpptrArray<T>::union_with(T* pt)
 Remove all copies of this item from the list.
 *****/
 template <class T>
-void tmDpptrArray<T>::erase_remove(T* pt)
-{
-  if (contains(pt)) {
-    tmArray<T*>::erase_remove(pt);
-    DstRemoveMeAsDpptrSrc(pt);
-  };
+void tmDpptrArray<T>::erase_remove(T* pt) {
+	if (this->contains(pt)) {
+		tmArray<T*>::erase_remove(pt);
+		DstRemoveMeAsDpptrSrc(pt);
+	};
 }
 
 
@@ -372,10 +356,10 @@ Called by:
 ~tmDpptrTarget()
 *****/
 template <class T>
-void tmDpptrArray<T>::RemoveDpptrTarget(tmDpptrTarget* aDpptrTarget)
-{
-  tmArray<T*>::erase(std::remove_if(this->begin(), this->end(), 
-    DpptrTarget_EqualTo<T>(aDpptrTarget)), this->end());
+void tmDpptrArray<T>::RemoveDpptrTarget(tmDpptrTarget* aDpptrTarget) {
+	tmArray<T*>::erase(std::remove_if(this->begin(), this->end(), [aDpptrTarget](T* ptr) {
+		return static_cast<tmDpptrTarget*>(ptr) == aDpptrTarget;
+	}), this->end());
 }
 
 

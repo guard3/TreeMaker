@@ -3,7 +3,7 @@ File:         tmTree.h
 Project:      TreeMaker 5.x
 Purpose:      Header file for class tmTree
 Author:       Robert J. Lang
-Modified by:  
+Modified by:  Konstantinos Bolosis
 Created:      2003-11-21
 Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
@@ -29,6 +29,7 @@ Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
 #include "tmArray.h"
 #include "tmArrayIterator.h"
 #include "tmCondition.h"
+#include "tmTreeCleaner.h"
 
 
 /**********
