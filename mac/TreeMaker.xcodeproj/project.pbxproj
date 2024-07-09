@@ -516,8 +516,8 @@
 		C0A528AC08E68E6F004D958F /* tmDpptrTester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tmDpptrTester; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A528B008E68E8D004D958F /* tmDpptrTester.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tmDpptrTester.cpp; path = test/tmDpptrTester.cpp; sourceTree = "<group>"; usesTabs = 1; };
 		C0A528CF08E69046004D958F /* tmNLCOTester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tmNLCOTester; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0A528E008E690E7004D958F /* tmNLCOTester.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = tmNLCOTester.cpp; sourceTree = "<group>"; };
-		C0A528E108E690E7004D958F /* tmNLCOTester.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = tmNLCOTester.h; sourceTree = "<group>"; };
+		C0A528E008E690E7004D958F /* tmNLCOTester.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tmNLCOTester.cpp; sourceTree = "<group>"; usesTabs = 1; };
+		C0A528E108E690E7004D958F /* tmNLCOTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tmNLCOTester.h; sourceTree = "<group>"; usesTabs = 1; };
 		C0A528F308E69208004D958F /* tmNLCO_wnlibStub.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = tmNLCO_wnlibStub.c; path = tmModel/tmNLCO/tmNLCO_wnlibStub.c; sourceTree = "<group>"; };
 		C0A528F408E69208004D958F /* tmNLCO_wnlib.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tmNLCO_wnlib.h; path = tmModel/tmNLCO/tmNLCO_wnlib.h; sourceTree = "<group>"; };
 		C0A528F508E69208004D958F /* tmNLCO_wnlib.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = tmNLCO_wnlib.cpp; path = tmModel/tmNLCO/tmNLCO_wnlib.cpp; sourceTree = "<group>"; };
