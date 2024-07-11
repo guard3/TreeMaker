@@ -397,7 +397,7 @@
 		C07D904E08CE319A00A52912 /* tmEdgeOptimizer.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = tmEdgeOptimizer.cpp; sourceTree = "<group>"; };
 		C07D904F08CE319A00A52912 /* tmStrainOptimizer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = tmStrainOptimizer.h; sourceTree = "<group>"; };
 		C07D905008CE319A00A52912 /* tmConstraintFns.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = tmConstraintFns.cpp; sourceTree = "<group>"; };
-		C07D905908CE31B800A52912 /* tmNLCO_alm.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = tmNLCO_alm.cpp; path = tmModel/tmNLCO/tmNLCO_alm.cpp; sourceTree = "<group>"; };
+		C07D905908CE31B800A52912 /* tmNLCO_alm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tmNLCO_alm.cpp; path = tmModel/tmNLCO/tmNLCO_alm.cpp; sourceTree = "<group>"; };
 		C07D905A08CE31B800A52912 /* tmNLCO.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = tmNLCO.cpp; path = tmModel/tmNLCO/tmNLCO.cpp; sourceTree = "<group>"; };
 		C07D905B08CE31B800A52912 /* tmNLCO_alm.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tmNLCO_alm.h; path = tmModel/tmNLCO/tmNLCO_alm.h; sourceTree = "<group>"; };
 		C07D906108CE31C200A52912 /* tmNLCO.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tmNLCO.h; path = tmModel/tmNLCO/tmNLCO.h; sourceTree = "<group>"; };
@@ -502,7 +502,7 @@
 		C07D915808CE389100A52912 /* tmwxApp.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = tmwxApp.cpp; path = tmwxCommon/tmwxApp.cpp; sourceTree = "<group>"; };
 		C086403208EB068400EEE5CD /* tmNewtonRaphsonTester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tmNewtonRaphsonTester; sourceTree = BUILT_PRODUCTS_DIR; };
 		C086403A08EB07CD00EEE5CD /* tmNewtonRaphsonTester.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = tmNewtonRaphsonTester.cpp; path = test/tmNewtonRaphsonTester.cpp; sourceTree = "<group>"; };
-		C08A828808BBF008008508CD /* tmHeader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = tmHeader.h; sourceTree = "<group>"; };
+		C08A828808BBF008008508CD /* tmHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tmHeader.h; sourceTree = "<group>"; usesTabs = 1; };
 		C08A846D08BC22E8008508CD /* tmModel_fwd.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tmModel_fwd.h; path = tmModel/tmModel_fwd.h; sourceTree = "<group>"; };
 		C08A846E08BC22E8008508CD /* tmModel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tmModel.h; path = tmModel/tmModel.h; sourceTree = "<group>"; };
 		C08A84E708BC2367008508CD /* tmArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tmArray.h; sourceTree = "<group>"; usesTabs = 1; };

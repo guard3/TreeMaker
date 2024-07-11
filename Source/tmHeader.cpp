@@ -196,10 +196,24 @@ NAN DETECTION FUNCTIONS
 Check for NaN in debug builds
 **********/
 #ifdef TMDEBUG
+void tmCheckNaN(float x) {
+	if (std::isnan(x)) {
+		// TBD, generate exception, or break here
+		TMLOG("NaN encountered!");
+	}
+}
 void tmCheckNaN(double x) {
 	if (std::isnan(x)) {
 		// TBD, generate exception, or break here
 		TMLOG("NaN encountered!");
 	}
+}
+void tmCheckNaN(const std::vector<float>& v) {
+	for (auto f : v)
+		tmCheckNaN(f);
+}
+void tmCheckNaN(const std::vector<double>& v) {
+	for (auto f : v)
+		tmCheckNaN(f);
 }
 #endif // TMDEBUG

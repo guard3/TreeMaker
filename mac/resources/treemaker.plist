@@ -46,7 +46,7 @@
 	<key>CFBundleVersion</key>
 	<string>TM_MAC_CFBUNDLE_VERSION</string>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.4.2</string>
+	<string>10.15</string>
 	<key>LSRequiresCarbon</key>
 	<true/>
 </dict>

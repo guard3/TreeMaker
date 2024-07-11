@@ -3,7 +3,7 @@ File:         tmHeader.h
 Project:      TreeMaker 5.x
 Purpose:      Common header file for all TreeMaker source code
 Author:       Robert J. Lang
-Modified by:  
+Modified by:  Konstantinos Bolosis
 Created:      2003-11-15
 Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
@@ -222,22 +222,26 @@ Set the floating-point precision used throughout the TreeMaker model.
 
 
 /**********
-TM_CHECK_NAN(x)
-Checks for NaN in debugging builds in numbers and (in C++) std::vector<T>
+tmCheckNan(x)
+Checks for NaN in debugging builds in numbers and (in C++) std::vector
 **********/
 #ifdef TMDEBUG
-  void tmCheckNaN(double x);
-  #ifdef __cplusplus
-    #include <vector>
-    template <class T>
-      void tmCheckNaN(const std::vector<T>& v) {
-        for (size_t i = 0; i < v.size(); ++i)
-          tmCheckNaN(v[i]);
-      };
-  #endif /* __cplusplus */
-  #define TM_CHECK_NAN(x) tmCheckNaN(x)
+void tmCheckNaN(float);
+void tmCheckNaN(double);
+#ifdef __cplusplus
+#include <vector>
+void tmCheckNaN(const std::vector<float>&);
+void tmCheckNaN(const std::vector<double>&);
+#endif /* __cplusplus */
 #else
-  #define TM_CHECK_NAN(x)
+#ifdef __cplusplus
+inline void tmCheckNaN(float) noexcept {}
+inline void tmCheckNaN(double) noexcept {}
+inline void tmCheckNaN(const std::vector<float>&) noexcept {}
+inline void tmCheckNaN(const std::vector<double>&) noexcept {}
+#else
+#define tmCheckNaN(x)
+#endif /* __cplusplus */
 #endif /* TMDEBUG */
 
 

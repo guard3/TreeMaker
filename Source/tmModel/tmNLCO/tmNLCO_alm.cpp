@@ -3,7 +3,7 @@ File:         tmNLCO_alm.h
 Project:      TreeMaker 5.x
 Purpose:      Header file for NLCO using the ALM method
 Author:       Robert J. Lang
-Modified by:  
+Modified by:  Konstantinos Bolosis
 Created:      2004-03-11
 Copyright:    ©2004 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
@@ -353,7 +353,7 @@ f_min == the returned minimum value of the function
 void tmNLCO_alm::MinimizeAugLag(vector<double>& x, size_t &iter_inner, 
   double &f_min)
 {
-  TM_CHECK_NAN(x);
+  tmCheckNaN(x);
 
   size_t ITER_INNER_MAX = 200;  // maximum number of iterations
   const double EPS = numeric_limits<double>::epsilon();
@@ -362,10 +362,10 @@ void tmNLCO_alm::MinimizeAugLag(vector<double>& x, size_t &iter_inner,
 
   // Calculate starting function value and gradient.
   f_min = AugLagFn(x);
-  TM_CHECK_NAN(f_min);
+  tmCheckNaN(f_min);
   vector<double> g(mSize);
   AugLagGrad(x, g);
-  TM_CHECK_NAN(g);
+  tmCheckNaN(g);
   
   // Initialize the inverse Hessian matrix and the search direction.
   tmMatrix<double> hess_inv(mSize, mSize);
@@ -400,7 +400,7 @@ void tmNLCO_alm::MinimizeAugLag(vector<double>& x, size_t &iter_inner,
     // (new) current point.
     for (size_t i = 0; i < mSize; ++i) dg[i] = g[i];
     AugLagGrad(x, g);
-    TM_CHECK_NAN(g);
+    tmCheckNaN(g);
     
     // Test for convergence on zero gradient
     double gtest = 0.0;
@@ -432,9 +432,9 @@ void tmNLCO_alm::MinimizeAugLag(vector<double>& x, size_t &iter_inner,
     // not sufficiently positive.
     if (fac > sqrt(EPS * sumdg * sumxi)) {
       fac = 1.0 / fac;
-      TM_CHECK_NAN(fac);
+      tmCheckNaN(fac);
       double fad = 1.0 / fae;
-      TM_CHECK_NAN(fad);
+      tmCheckNaN(fad);
       for (size_t i = 0; i < mSize; ++i) 
         dg[i] = fac * srch_dir[i] - fad * hdg[i];
       for (size_t i = 0; i < mSize; ++i) {
@@ -471,10 +471,10 @@ void tmNLCO_alm::LineSearchAugLag(const vector<double>& x_old,
   const double f_old, const vector<double>& g_old, 
   vector<double>& srch_dir, vector<double>& x_new, double &f_new)
 {
-  TM_CHECK_NAN(x_old);
-  TM_CHECK_NAN(f_old);
-  TM_CHECK_NAN(g_old);
-  TM_CHECK_NAN(srch_dir);
+  tmCheckNaN(x_old);
+  tmCheckNaN(f_old);
+  tmCheckNaN(g_old);
+  tmCheckNaN(srch_dir);
 
   const double ALF = 1.0e-4;  // ensures sufficient decrease in function value
   const double TOL_X = numeric_limits<double>::epsilon();
@@ -607,7 +607,7 @@ Gradient of the augmented Lagrangian
 *****/
 void tmNLCO_alm::AugLagGrad(const vector<double>& x, vector<double>& g)
 {
-  TM_CHECK_NAN(mLagMul);
+  tmCheckNaN(mLagMul);
 
   // A couple of useful numbers to have on hand
   size_t ne = mEqns.size();
@@ -620,18 +620,18 @@ void tmNLCO_alm::AugLagGrad(const vector<double>& x, vector<double>& g)
   
   // compute gradient of objective
   mObjective->Grad(x, g);
-  TM_CHECK_NAN(g);
+  tmCheckNaN(g);
 
   // Accumulate contributions from equality constraints.
   for (size_t i = 0; i < ne; ++i) {
     tmDifferentiableFn* eqn = mEqns[i];
     const double& lm = mLagMul[i];
     double f = eqn->Func(x);
-    TM_CHECK_NAN(f);
+    tmCheckNaN(f);
     double gmul = lm + 2 * f * mWeight;
     if (fabs(gmul) > tol_lm) {
       eqn->Grad(x, gscr);
-      TM_CHECK_NAN(gscr);
+      tmCheckNaN(gscr);
       for (size_t j = 0; j < mSize; ++j) 
         g[j] += gmul * gscr[j];
     }
@@ -641,13 +641,13 @@ void tmNLCO_alm::AugLagGrad(const vector<double>& x, vector<double>& g)
     tmDifferentiableFn* ineqn = mIneqns[i];
     const double& lm = mLagMul[i + ne];
     double f = ineqn->Func(x);
-    TM_CHECK_NAN(f);
+    tmCheckNaN(f);
     double mu = -0.5 * lm / mWeight;
     if (f >= mu) {
       double gmul = lm + 2 * f * mWeight;
       if (fabs(gmul) > tol_lm) {
         ineqn->Grad(x, gscr);
-          TM_CHECK_NAN(gscr);
+        tmCheckNaN(gscr);
         for (size_t j = 0; j < mSize; ++j) 
           g[j] += gmul * gscr[j];
       }
