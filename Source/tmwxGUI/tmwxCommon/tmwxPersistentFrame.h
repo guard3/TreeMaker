@@ -62,7 +62,6 @@ public:
   // Event handling
   void OnMove(wxMoveEvent& event);
   void OnSize(wxSizeEvent& event);
-  DECLARE_EVENT_TABLE()
 protected:
   virtual void InitPositionAndSize();
   virtual void GetPositionSizeInfo(Key key, wxString& keystr, int& val);

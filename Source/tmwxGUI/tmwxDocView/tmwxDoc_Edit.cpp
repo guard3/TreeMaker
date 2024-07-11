@@ -3,7 +3,7 @@ File:         tmwxDoc_Edit.cpp
 Project:      TreeMaker 5.x
 Purpose:      Source file for TreeMaker document class, Edit menu commands
 Author:       Robert J. Lang
-Modified by:  
+Modified by:  Konstantinos Bolosis
 Created:      2005-12-10
 Copyright:    ©2005 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
@@ -442,7 +442,7 @@ void tmwxDoc::OnCopy(wxCommandEvent&)
 {
 #if wxUSE_METAFILE  // wxGTK doesn't support metafile
   wxMetafileDC dc;
-  if (dc.Ok()) {
+  if (dc.IsOk()) {
     GetDesignCanvas()->OnDraw(dc);
     wxMetafile *mf = dc.Close();
     if (mf) {

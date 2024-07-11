@@ -3,7 +3,7 @@ File:         tmwxGetUserInputDialog.cpp
 Project:      TreeMaker 5.x
 Purpose:      Implementation file for tmwxGetUserInputDialog class
 Author:       Robert J. Lang
-Modified by:  
+Modified by:  Konstantinos Bolosis
 Created:      2005-12-11
 Copyright:    ©2005 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
@@ -49,7 +49,7 @@ void tmwxGetUserInputDialog::AddTextPair(const wxString& caption,
   wxGridSizer* gridsizer = new wxGridSizer(2, 0, 5);
   gridsizer->Add(CreateTextSizer(caption), 
     wxSizerFlags().Right().Border(wxALL, 2));
-  gridsizer->Add(textctrl = new tmwxTextCtrl(this, format), 
+  gridsizer->Add(textctrl = new tmwxTextCtrl(this, format.wc_str()),
     wxSizerFlags().Left().Border(wxALL, 2));
   mDialogSizer->Add(gridsizer, wxSizerFlags().Expand());
 }
@@ -64,7 +64,7 @@ void tmwxGetUserInputDialog::AddCheckPair(tmwxCheckBox*& checkbox,
   wxGridSizer* gridsizer = new wxGridSizer(2, 0, 5);
   gridsizer->Add(checkbox = new tmwxCheckBox(this, caption), 
     wxSizerFlags().Right().Border(wxALL, 2));
-  gridsizer->Add(textctrl = new tmwxTextCtrl(this, format), 
+  gridsizer->Add(textctrl = new tmwxTextCtrl(this, format.wc_str()),
     wxSizerFlags().Left().Border(wxALL, 2));
   mDialogSizer->Add(gridsizer, wxSizerFlags().Expand());
 }
@@ -81,7 +81,7 @@ void tmwxGetUserInputDialog::StartRadioPair(wxRadioButton*& radiobtn,
   gridsizer->Add(radiobtn = new wxRadioButton(this, wxID_ANY, caption, 
     wxDefaultPosition, wxDefaultSize, wxRB_GROUP), 
     wxSizerFlags().Left().Border(wxALL, 2));
-  gridsizer->Add(textctrl = new tmwxTextCtrl(this, format), 
+  gridsizer->Add(textctrl = new tmwxTextCtrl(this, format.wc_str()),
     wxSizerFlags().Left().Border(wxALL, 2));
   mDialogSizer->Add(gridsizer, wxSizerFlags().Expand());
 }
@@ -97,7 +97,7 @@ void tmwxGetUserInputDialog::AddRadioPair(wxRadioButton*& radiobtn,
   gridsizer->Add(radiobtn = new wxRadioButton(this, wxID_ANY, caption, 
     wxDefaultPosition, wxDefaultSize), 
     wxSizerFlags().Left().Border(wxALL, 2));
-  gridsizer->Add(textctrl = new tmwxTextCtrl(this, format), 
+  gridsizer->Add(textctrl = new tmwxTextCtrl(this, format.wc_str()),
     wxSizerFlags().Left().Border(wxALL, 2));
   mDialogSizer->Add(gridsizer, wxSizerFlags().Expand());
 }

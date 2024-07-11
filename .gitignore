@@ -1,3 +1,7 @@
 # Platform specific files
 **/.DS_Store
 **/.desktop.ini
+
+# Other stuff
+wx*
+**/help.zip

@@ -3,7 +3,7 @@ File:         tmwxApp.cpp
 Project:      TreeMaker 5.x
 Purpose:      Source file for TreeMaker application class
 Author:       Robert J. Lang
-Modified by:  
+Modified by:  Konstantinos Bolosis
 Created:      2003-11-15
 Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
@@ -343,6 +343,7 @@ bool tmwxApp::OnInit(void)
     );
 #endif
 
+#if 0
 #ifdef __WXMAC__
   wxFileName::MacRegisterDefaultTypeAndCreator(
     "tmd5", // extension
@@ -350,6 +351,7 @@ bool tmwxApp::OnInit(void)
     'TrM5'  // creator
     );
 #endif // __WXMAC__
+#endif
 
 #ifdef __WXMAC__
   // Macs show a menu bar even when there are no document windows. 
@@ -1130,6 +1132,7 @@ bool tmwxApp::ProcessEvent(wxEvent& event)
  
   // If help frame is the top window, give it a shot at processing any command
   // event before passing it on to superclass.
+#if 0
   wxWindow* topWindow = wxTheApp->GetTopWindow();
   if (mHelp && topWindow == (wxWindow*)(mHelp->mHtmlHelpFrame)) {
     eventStack.push_back(&event);
@@ -1140,6 +1143,7 @@ bool tmwxApp::ProcessEvent(wxEvent& event)
     eventStack.pop_back();
     return wxApp::ProcessEvent(event);
   }
+#endif
   
   // Then give the document manager a shot at processing command events.
   eventStack.push_back(&event);
@@ -1464,7 +1468,7 @@ bool tmwxPrefsDialog::TransferDataFromWindow()
   tmNLCO::Algorithm algorithm = 
     tmNLCO::Algorithm(mAlgorithm->GetCurrentSelection());
   tmNLCO::SetAlgorithm(algorithm);
-  wxConfig::Get()->Write(ALGORITHM_KEY, algorithm);
+  wxConfig::Get()->Write(ALGORITHM_KEY, (int)algorithm);
   
   int showAboutAtStartup = mShowAboutAtStartup->GetValue();
   wxConfig::Get()->Write(SHOW_ABOUT_AT_STARTUP_KEY, showAboutAtStartup);

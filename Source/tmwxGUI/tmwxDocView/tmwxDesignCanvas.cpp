@@ -3,7 +3,7 @@ File:         tmwxDesignCanvas.cpp
 Project:      TreeMaker 5.x
 Purpose:      Implementation file for TreeMaker design view canvas class
 Author:       Robert J. Lang
-Modified by:  
+Modified by:  Konstantinos Bolosis
 Created:      2003-11-15
 Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
@@ -1045,7 +1045,11 @@ void tmwxDesignCanvas::DrawPaper<tmwxDesignCanvas::Text>(wxDC& dc)
     dc.SetTextForeground(*wxBLACK);
     wxPoint p1 = TreeToDC(tmPoint(0, theTree->GetPaperHeight()));
     p1.y -= PixelsToDC(HEADER_OFFSET);
+#if 0
     mDoc->GetPrintableName(text);
+#else
+#warning "TODO: Check what's going on here"
+#endif
     dc.DrawText(text, p1);
     wxPoint p2 = TreeToDC(tmPoint(theTree->GetPaperWidth(), 
       theTree->GetPaperHeight()));

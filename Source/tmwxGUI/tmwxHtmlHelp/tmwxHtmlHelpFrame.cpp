@@ -3,7 +3,7 @@ File:         tmwxHtmlHelpFrame.cpp
 Project:      TreeMaker 5.x
 Purpose:      Implementation file for class tmwxHtmlHelpFrame
 Author:       Robert J. Lang
-Modified by:  
+Modified by:  Konstantinos Bolosis
 Created:      2005-11-23
 Copyright:    ©2005 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
@@ -38,8 +38,12 @@ from within the tmwxHtmlHelpController class.
 *****/
 void tmwxHtmlHelpFrame::SetHtmlHelpPrinter(wxHtmlEasyPrinting* printer)
 {
+#if 0
   if (m_Printer) delete m_Printer;
   m_Printer = printer;
+#else
+#warning "TODO: Check what's going on here"
+#endif
 }
 
 
@@ -57,9 +61,13 @@ Perform the File->Print... command
 *****/
 void tmwxHtmlHelpFrame::OnPrint(wxCommandEvent& event)
 {
+#if 0
   TMASSERT(m_Printer);
   TMASSERT(!!m_HtmlWin->GetOpenedPage());
   m_Printer->PrintFile(m_HtmlWin->GetOpenedPage());
+#else
+#warning "TODO: Check what's going on here"
+#endif
 }
 
 
@@ -77,9 +85,13 @@ Perform the File->Print Preview... command
 *****/
 void tmwxHtmlHelpFrame::OnPrintPreview(wxCommandEvent& event)
 {
+#if 0
   TMASSERT(m_Printer);
   TMASSERT(!!m_HtmlWin->GetOpenedPage());
   m_Printer->PreviewFile(m_HtmlWin->GetOpenedPage());
+#else
+#warning "TODO: Check what's going on here"
+#endif
 }
 
 

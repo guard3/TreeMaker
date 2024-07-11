@@ -3,7 +3,7 @@ File:         tmwxApp.h
 Project:      TreeMaker 5.x
 Purpose:      Header file for TreeMaker application class
 Author:       Robert J. Lang
-Modified by:  
+Modified by:  Konstantinos Bolosis
 Created:      2003-11-15
 Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
@@ -16,6 +16,7 @@ Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
 
 // Forward declarations
 #include "tmwxGUI_fwd.h"
+#include <wx/cmndata.h>
 
 class wxSingleInstanceChecker;
 class wxDocument;
@@ -221,7 +222,7 @@ public:
   static void SetPalettes(tmwxDoc* doc = NULL);
   bool IsQuitting() const {return mIsQuitting;};
   wxPrintData& GetPrintData();
-  wxPageSetupData& GetPageSetupData();
+	wxPageSetupDialogData& GetPageSetupData();
   
 #if defined(__LINUX__) || defined(__WXMSW__)
   wxIcon GetAppIcon() const { return mConfig.mAppIcon; }

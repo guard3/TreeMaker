@@ -3,7 +3,7 @@ File:         tmwxDesignFrame.cpp
 Project:      TreeMaker 5.x
 Purpose:      Implementation file for class tmwxDesignFrame
 Author:       Robert J. Lang
-Modified by:  
+Modified by:  Konstantinos Bolosis
 Created:      2003-11-15
 Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
@@ -61,6 +61,7 @@ also need to update our floating windows with the currently-active palette.
 *****/
 void tmwxDesignFrame::OnActivate(wxActivateEvent& event)
 {
+#if 0
   tmwxDocChildFrame::OnActivate(event); // let base class finish handling the event.
 
   if (event.GetActive()) {
@@ -72,6 +73,9 @@ void tmwxDesignFrame::OnActivate(wxActivateEvent& event)
     // of the top document window, which is us. 
     gApp->SetPalettes(mDoc);
   }
+#else
+#warning "TODO: Check what's going on here"
+#endif
 }
 
 

@@ -3,7 +3,7 @@ File:         tmwxHtmlHelpController.h
 Project:      TreeMaker 5.x
 Purpose:      Header file for TreeMaker help controller class
 Author:       Robert J. Lang
-Modified by:  
+Modified by:  Konstantinos Bolosis
 Created:      2005-11-23
 Copyright:    ©2005 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
@@ -29,8 +29,8 @@ public:
   wxHtmlEasyPrinting* mHtmlEasyPrinting;
 
   tmwxHtmlHelpController();
-  wxHtmlHelpFrame* CreateHelpFrame(wxHtmlHelpData* data);
-  void CreateHelpWindow();
+  wxHtmlHelpFrame* CreateHelpFrame(wxHtmlHelpData* data) override;
+  wxWindow* CreateHelpWindow() override;
 };
 
 

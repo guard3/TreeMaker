@@ -3,7 +3,7 @@ File:         tmwxInspectorPanel.cpp
 Project:      TreeMaker 5.x
 Purpose:      Source file for any panel that goes in the Inspector
 Author:       Robert J. Lang
-Modified by:  
+Modified by:  Konstantinos Bolosis
 Created:      2005-12-07
 Copyright:    ©2005 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
@@ -45,7 +45,7 @@ void tmwxInspectorPanel::AddTextPair(const wxString& caption,
   wxGridSizer* gridsizer = new wxGridSizer(2);
   gridsizer->Add(new tmwxStaticText(this, 11, caption), 
    0, wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL | wxTOP|wxBOTTOM, 2);
-  gridsizer->Add(textctrl = new tmwxTextCtrl(this, format), 
+  gridsizer->Add(textctrl = new tmwxTextCtrl(this, format.wc_str()),
    0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL | wxTOP|wxBOTTOM, 2);
   mPanelSizer->Add(gridsizer, wxSizerFlags(1).Expand());
 }
@@ -71,7 +71,7 @@ void tmwxInspectorPanel::AddCheckPair(wxCheckBox*& checkbox,
   wxGridSizer* gridsizer = new wxGridSizer(2);
   gridsizer->Add(checkbox = new tmwxCheckBoxSmall(this, caption), 
    0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL | wxTOP|wxBOTTOM, 2);
-  gridsizer->Add(textctrl = new tmwxTextCtrl(this, format), 
+  gridsizer->Add(textctrl = new tmwxTextCtrl(this, format.wc_str()),
    0, wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL | wxTOP|wxBOTTOM, 2);
   mPanelSizer->Add(gridsizer, wxSizerFlags(1).Expand());
 }

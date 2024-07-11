@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0634B4EA2C401C77006BCA74 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0634B4E92C401C77006BCA74 /* QuartzCore.framework */; };
+		0634B4EC2C40208D006BCA74 /* help.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0634B4EB2C40208D006BCA74 /* help.zip */; };
+		067D9D812C400131008E6F51 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 067D9D802C400130008E6F51 /* Cocoa.framework */; };
 		C01B013E094808F3000C489E /* tmwxInspectorPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C01B013C094808F3000C489E /* tmwxInspectorPanel.cpp */; };
 		C01BFEF708E6B2AE00D2B685 /* cfsqp_noprint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0A5290B08E6937D004D958F /* cfsqp_noprint.cpp */; };
 		C01BFEF808E6B2AE00D2B685 /* rfsqp_noprint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0A5291A08E693F3004D958F /* rfsqp_noprint.cpp */; };
@@ -268,7 +271,6 @@
 		C0C9A8FB08BD239A00ADCE48 /* Icon_doc.icns in Resources */ = {isa = PBXBuildFile; fileRef = C0C9A8F908BD239A00ADCE48 /* Icon_doc.icns */; };
 		C0D0D0620935746100DC38CA /* tmwxHtmlHelpController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0D0D05E0935746100DC38CA /* tmwxHtmlHelpController.cpp */; };
 		C0D0D0640935746100DC38CA /* tmwxHtmlHelpFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0D0D0600935746100DC38CA /* tmwxHtmlHelpFrame.cpp */; };
-		C0D24049099E70F900436EFE /* libwx_mac_static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0D24048099E70F900436EFE /* libwx_mac_static.a */; };
 		C0DB2C6908E7830600098C3F /* tmNLCO_cfsqp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0A528FD08E6925B004D958F /* tmNLCO_cfsqp.cpp */; };
 		C0DB2C6A08E786CE00098C3F /* cfsqp_noprint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0A5290B08E6937D004D958F /* cfsqp_noprint.cpp */; };
 		C0DB2C6B08E7873900098C3F /* tmNLCO_rfsqp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0A528FB08E6925B004D958F /* tmNLCO_rfsqp.cpp */; };
@@ -276,7 +278,6 @@
 		C0DB2C7308E78CBF00098C3F /* tmNLCO_wnlib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0A528F508E69208004D958F /* tmNLCO_wnlib.cpp */; };
 		C0DD44800865C42C00AE35AB /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0DD447F0865C42C00AE35AB /* Carbon.framework */; };
 		C0DD44850865C45500AE35AB /* System.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0DD44840865C45500AE35AB /* System.framework */; };
-		C0E6FDE809390BD400E12748 /* help.zip in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0E6FDE709390BD400E12748 /* help.zip */; };
 		C0E79C15094B88DC00A0CB76 /* tmConditionPathCombo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0E79C13094B88DC00A0CB76 /* tmConditionPathCombo.cpp */; };
 		C0E79C2E094B8B8500A0CB76 /* tmwxConditionPathComboPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0E79C2C094B8B8500A0CB76 /* tmwxConditionPathComboPanel.cpp */; };
 		C0E79D04094C91EC00A0CB76 /* tmwxDoc_Edit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0E79CFE094C91EB00A0CB76 /* tmwxDoc_Edit.cpp */; };
@@ -288,7 +289,6 @@
 		C0E79D46094CC7C000A0CB76 /* tmwxGetUserInputDialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0E79D44094CC7C000A0CB76 /* tmwxGetUserInputDialog.cpp */; };
 		C0E79DA1094D2C0300A0CB76 /* tmwxCheckBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0E79D9F094D2C0300A0CB76 /* tmwxCheckBox.cpp */; };
 		C0E9FC4008D8B6D900103F9F /* tmOptimizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0E9FC3E08D8B6D900103F9F /* tmOptimizer.cpp */; };
-		C0F1FD9D093E9DD1004665FB /* help.zip_zip_treemaker.hhp.cached in CopyFiles */ = {isa = PBXBuildFile; fileRef = C0F1FD9C093E9DD1004665FB /* help.zip_zip_treemaker.hhp.cached */; };
 		C0F1FDC3093EB4F9004665FB /* tmwxDocManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0F1FDC1093EB4F8004665FB /* tmwxDocManager.cpp */; };
 		C0F64B41094E2B4400DAB9C8 /* tmConditionPathCombo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0E79C13094B88DC00A0CB76 /* tmConditionPathCombo.cpp */; };
 /* End PBXBuildFile section */
@@ -300,17 +300,20 @@
 			dstPath = "";
 			dstSubfolderSpec = 12;
 			files = (
+				0634B4EC2C40208D006BCA74 /* help.zip in CopyFiles */,
 				C0B0670E0937CD61006C8423 /* about.htm in CopyFiles */,
 				C099402708EF5C21002E8E42 /* SplashScreen.png in CopyFiles */,
-				C0E6FDE809390BD400E12748 /* help.zip in CopyFiles */,
-				C0F1FD9D093E9DD1004665FB /* help.zip_zip_treemaker.hhp.cached in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C01B013C094808F3000C489E /* tmwxInspectorPanel.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = tmwxInspectorPanel.cpp; sourceTree = "<group>"; };
+		0634B4E72C401BE0006BCA74 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0634B4E92C401C77006BCA74 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0634B4EB2C40208D006BCA74 /* help.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = help.zip; path = help/help.zip; sourceTree = "<group>"; };
+		067D9D802C400130008E6F51 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C01B013C094808F3000C489E /* tmwxInspectorPanel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tmwxInspectorPanel.cpp; sourceTree = "<group>"; usesTabs = 1; };
 		C01B013D094808F3000C489E /* tmwxInspectorPanel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = tmwxInspectorPanel.h; sourceTree = "<group>"; };
 		C01BFEE508E6B1C000D2B685 /* tmModelTester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tmModelTester; sourceTree = BUILT_PRODUCTS_DIR; };
 		C01BFEF108E6B28800D2B685 /* tmModelTester.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tmModelTester.cpp; sourceTree = "<group>"; usesTabs = 1; };
@@ -403,9 +406,9 @@
 		C07D906508CE31D300A52912 /* tmStubFinder.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tmStubFinder.h; path = tmModel/tmSolvers/tmStubFinder.h; sourceTree = "<group>"; };
 		C07D906608CE31D300A52912 /* tmMatrix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tmMatrix.h; path = tmModel/tmSolvers/tmMatrix.h; sourceTree = "<group>"; };
 		C07D908708CE321E00A52912 /* tmwxPersistentFrame.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tmwxPersistentFrame.h; path = tmwxCommon/tmwxPersistentFrame.h; sourceTree = "<group>"; };
-		C07D908808CE321E00A52912 /* tmwxPersistentFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = tmwxPersistentFrame.cpp; path = tmwxCommon/tmwxPersistentFrame.cpp; sourceTree = "<group>"; };
+		C07D908808CE321E00A52912 /* tmwxPersistentFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tmwxPersistentFrame.cpp; path = tmwxCommon/tmwxPersistentFrame.cpp; sourceTree = "<group>"; usesTabs = 1; };
 		C07D908908CE321E00A52912 /* tmwxCommand.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = tmwxCommand.cpp; path = tmwxCommon/tmwxCommand.cpp; sourceTree = "<group>"; };
-		C07D908B08CE321E00A52912 /* tmwxApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tmwxApp.h; path = tmwxCommon/tmwxApp.h; sourceTree = "<group>"; };
+		C07D908B08CE321E00A52912 /* tmwxApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tmwxApp.h; path = tmwxCommon/tmwxApp.h; sourceTree = "<group>"; usesTabs = 1; };
 		C07D908E08CE321E00A52912 /* tmwxGUI_fwd.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tmwxGUI_fwd.h; path = tmwxCommon/tmwxGUI_fwd.h; sourceTree = "<group>"; };
 		C07D908F08CE321E00A52912 /* tmwxStr.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tmwxStr.h; path = tmwxCommon/tmwxStr.h; sourceTree = "<group>"; };
 		C07D909008CE321E00A52912 /* tmwxStr.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = tmwxStr.cpp; path = tmwxCommon/tmwxStr.cpp; sourceTree = "<group>"; };
@@ -604,16 +607,14 @@
 		C0C9A89308BD198900ADCE48 /* tmHeader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tmHeader.cpp; sourceTree = "<group>"; usesTabs = 1; };
 		C0C9A8F808BD239A00ADCE48 /* Icon_app.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon_app.icns; sourceTree = "<group>"; };
 		C0C9A8F908BD239A00ADCE48 /* Icon_doc.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon_doc.icns; sourceTree = "<group>"; };
-		C0D0D05E0935746100DC38CA /* tmwxHtmlHelpController.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = tmwxHtmlHelpController.cpp; path = tmwxHtmlHelp/tmwxHtmlHelpController.cpp; sourceTree = "<group>"; };
+		C0D0D05E0935746100DC38CA /* tmwxHtmlHelpController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tmwxHtmlHelpController.cpp; path = tmwxHtmlHelp/tmwxHtmlHelpController.cpp; sourceTree = "<group>"; usesTabs = 1; };
 		C0D0D05F0935746100DC38CA /* tmwxHtmlHelpFrame.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tmwxHtmlHelpFrame.h; path = tmwxHtmlHelp/tmwxHtmlHelpFrame.h; sourceTree = "<group>"; };
 		C0D0D0600935746100DC38CA /* tmwxHtmlHelpFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = tmwxHtmlHelpFrame.cpp; path = tmwxHtmlHelp/tmwxHtmlHelpFrame.cpp; sourceTree = "<group>"; };
 		C0D0D0610935746100DC38CA /* tmwxHtmlHelpController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tmwxHtmlHelpController.h; path = tmwxHtmlHelp/tmwxHtmlHelpController.h; sourceTree = "<group>"; };
 		C0D24035099E6DBB00436EFE /* treemaker.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = treemaker.plist; sourceTree = "<group>"; };
-		C0D24048099E70F900436EFE /* libwx_mac_static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwx_mac_static.a; path = "build/wxMac-2.6/src/build/Deployment/libwx_mac_static.a"; sourceTree = "<group>"; };
 		C0DD440A0865BDEB00AE35AB /* TreeMaker 5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TreeMaker 5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0DD447F0865C42C00AE35AB /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		C0DD44840865C45500AE35AB /* System.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = System.framework; path = /System/Library/Frameworks/System.framework; sourceTree = "<absolute>"; };
-		C0E6FDE709390BD400E12748 /* help.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = help.zip; path = build/TreeMaker.build/help/help.zip; sourceTree = SOURCE_ROOT; };
 		C0E79C12094B88DC00A0CB76 /* tmConditionPathCombo.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = tmConditionPathCombo.h; sourceTree = "<group>"; };
 		C0E79C13094B88DC00A0CB76 /* tmConditionPathCombo.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = tmConditionPathCombo.cpp; sourceTree = "<group>"; };
 		C0E79C16094B8A2500A0CB76 /* tmwxConditionPathAngleQuantPanel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = tmwxConditionPathAngleQuantPanel.h; sourceTree = "<group>"; };
@@ -625,14 +626,13 @@
 		C0E79D00094C91EB00A0CB76 /* tmwxDoc_Action.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = tmwxDoc_Action.cpp; sourceTree = "<group>"; };
 		C0E79D01094C91EC00A0CB76 /* tmwxDoc_Debug.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = tmwxDoc_Debug.cpp; sourceTree = "<group>"; };
 		C0E79D02094C91EC00A0CB76 /* tmwxDoc_Condition.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = tmwxDoc_Condition.cpp; sourceTree = "<group>"; };
-		C0E79D03094C91EC00A0CB76 /* tmwxDoc_File.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = tmwxDoc_File.cpp; sourceTree = "<group>"; };
+		C0E79D03094C91EC00A0CB76 /* tmwxDoc_File.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tmwxDoc_File.cpp; sourceTree = "<group>"; usesTabs = 1; };
 		C0E79D43094CC7C000A0CB76 /* tmwxGetUserInputDialog.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tmwxGetUserInputDialog.h; path = tmwxCommon/tmwxGetUserInputDialog.h; sourceTree = "<group>"; };
 		C0E79D44094CC7C000A0CB76 /* tmwxGetUserInputDialog.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = tmwxGetUserInputDialog.cpp; path = tmwxCommon/tmwxGetUserInputDialog.cpp; sourceTree = "<group>"; };
 		C0E79D9E094D2C0300A0CB76 /* tmwxCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = tmwxCheckBox.h; sourceTree = "<group>"; };
 		C0E79D9F094D2C0300A0CB76 /* tmwxCheckBox.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = tmwxCheckBox.cpp; sourceTree = "<group>"; };
 		C0E9FC3D08D8B6D900103F9F /* tmOptimizer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = tmOptimizer.h; sourceTree = "<group>"; };
 		C0E9FC3E08D8B6D900103F9F /* tmOptimizer.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = tmOptimizer.cpp; sourceTree = "<group>"; };
-		C0F1FD9C093E9DD1004665FB /* help.zip_zip_treemaker.hhp.cached */ = {isa = PBXFileReference; lastKnownFileType = file; name = help.zip_zip_treemaker.hhp.cached; path = build/TreeMaker.build/help/help.zip_zip_treemaker.hhp.cached; sourceTree = SOURCE_ROOT; };
 		C0F1FDC1093EB4F8004665FB /* tmwxDocManager.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = tmwxDocManager.cpp; path = tmwxCommon/tmwxDocManager.cpp; sourceTree = "<group>"; };
 		C0F1FDC2093EB4F9004665FB /* tmwxDocManager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tmwxDocManager.h; path = tmwxCommon/tmwxDocManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -677,10 +677,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0634B4EA2C401C77006BCA74 /* QuartzCore.framework in Frameworks */,
+				067D9D812C400131008E6F51 /* Cocoa.framework in Frameworks */,
 				C0DD44800865C42C00AE35AB /* Carbon.framework in Frameworks */,
 				C0DD44850865C45500AE35AB /* System.framework in Frameworks */,
 				C058AC0E0865FB0300A17C7C /* IOKit.framework in Frameworks */,
-				C0D24049099E70F900436EFE /* libwx_mac_static.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,8 +700,7 @@
 		C02AC85C08ECC59E0045F0A5 /* help */ = {
 			isa = PBXGroup;
 			children = (
-				C0E6FDE709390BD400E12748 /* help.zip */,
-				C0F1FD9C093E9DD1004665FB /* help.zip_zip_treemaker.hhp.cached */,
+				0634B4EB2C40208D006BCA74 /* help.zip */,
 			);
 			name = help;
 			sourceTree = "<group>";
@@ -1194,6 +1194,9 @@
 		C0DD447E0865C3E200AE35AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0634B4E92C401C77006BCA74 /* QuartzCore.framework */,
+				0634B4E72C401BE0006BCA74 /* AVFoundation.framework */,
+				067D9D802C400130008E6F51 /* Cocoa.framework */,
 				C058AC0D0865FB0300A17C7C /* IOKit.framework */,
 				C0DD44840865C45500AE35AB /* System.framework */,
 				C0DD447F0865C42C00AE35AB /* Carbon.framework */,
@@ -1204,7 +1207,6 @@
 		C0F2BF95094A18A800496B77 /* External Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				C0D24048099E70F900436EFE /* libwx_mac_static.a */,
 			);
 			name = "External Libraries";
 			sourceTree = SOURCE_ROOT;
@@ -1861,13 +1863,16 @@
 				);
 				GCC_VERSION_i386 = 4.0;
 				GCC_VERSION_ppc = 3.3;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"/Users/guard3/TreeMaker/wxWidgets-3.2.5/include",
+					"/Users/guard3/TreeMaker/wxWidgets-3.2.5/lib/wx/include/osx_cocoa-unicode-static-3.2",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/resources/treemaker.plist";
 				INFOPLIST_PREFIX_HEADER = "$(SRCROOT)/../Source/tmVersion.h";
 				INFOPLIST_PREPROCESS = YES;
 				INSTALL_PATH = "$(USER_APPS_DIR)";
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/build/wxMac-2.6/src/build/Deployment";
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MAC_OSX_DEPLOYMENT_TARGET_i386 = 10.4;
 				MAC_OSX_DEPLOYMENT_TARGET_ppc = 10.3;
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
@@ -1878,10 +1883,17 @@
 				OTHER_LDFLAGS = (
 					"-liconv",
 					"-lz",
+					"-lpng",
+					"-lwx_osx_cocoau-3.2",
+					"-ltiff",
+					"-ljpeg",
+					"-lwxscintilla-3.2",
+					"-lwxregexu-3.2",
+					"-lwx_osx_cocoau_gl-3.2",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.langorigami.TreeMaker;
 				PRODUCT_NAME = "TreeMaker 5";
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
 				USER_HEADER_SEARCH_PATHS = "$(SYMROOT)/wxMac-2.6/include $(SYMROOT)/wxMac-2.6/src/build/include $(SRCROOT)/../Source/** $(SDKROOT)/usr/include/malloc";
 				WARNING_CFLAGS = (
@@ -2623,39 +2635,45 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/../Source/tmHeader.h";
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					NO_GCC_PRAGMA,
-					__WXMAC__,
-					"wxUSE_BASE=1",
 					"_FILE_OFFSET_BITS=64",
-					_LARGE_FILES,
-					"__WXMAC_XCODE__=1",
-					"WX_PRECOMP=1",
-					MACOS_CLASSIC,
-					"__WXDEBUG__=1",
+					__WXMAC__,
+					__WXOSX__,
+					__WXOSX_COCOA__,
+					TMWX,
 				);
 				GCC_VERSION_i386 = 4.0;
 				GCC_VERSION_ppc = 3.3;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"/Users/guard3/TreeMaker/wxWidgets-3.2.5/include",
+					"/Users/guard3/TreeMaker/wxWidgets-3.2.5/lib/wx/include/osx_cocoa-unicode-static-3.2",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/resources/treemaker.plist";
 				INFOPLIST_PREFIX_HEADER = "$(SRCROOT)/../Source/tmVersion.h";
 				INFOPLIST_PREPROCESS = YES;
 				INSTALL_PATH = "$(USER_APPS_DIR)";
 				LIBRARY_SEARCH_PATHS = (
-					"$(SRCROOT)/build/wxMac-2.6/src/build/Development",
-					"$(SRCROOT)/build/wxMac-2.6/src/build/Deployment",
+					"/Users/guard3/TreeMaker/wxWidgets-3.2.5/lib",
+					/usr/local/lib,
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MAC_OSX_DEPLOYMENT_TARGET_i386 = 10.4;
 				MAC_OSX_DEPLOYMENT_TARGET_ppc = 10.3;
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
-				OTHER_CFLAGS = "-DTMWX";
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-liconv",
 					"-lz",
+					"-lpng",
+					"-lwx_osx_cocoau-3.2",
+					"-ltiff",
+					"-ljpeg",
+					"-lwxscintilla-3.2",
+					"-lwxregexu-3.2",
+					"-lwx_osx_cocoau_gl-3.2",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.langorigami.TreeMaker;
 				PRODUCT_NAME = "TreeMaker 5";
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
 				USER_HEADER_SEARCH_PATHS = "$(SYMROOT)/wxMac-2.6/include $(SYMROOT)/wxMac-2.6/src/build/include $(SRCROOT)/../Source/** $(SDKROOT)/usr/include/malloc";
 				WARNING_CFLAGS = (
@@ -2693,13 +2711,16 @@
 				);
 				GCC_VERSION_i386 = 4.0;
 				GCC_VERSION_ppc = 3.3;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"/Users/guard3/TreeMaker/wxWidgets-3.2.5/include",
+					"/Users/guard3/TreeMaker/wxWidgets-3.2.5/lib/wx/include/osx_cocoa-unicode-static-3.2",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/resources/treemaker.plist";
 				INFOPLIST_PREFIX_HEADER = "$(SRCROOT)/../Source/tmVersion.h";
 				INFOPLIST_PREPROCESS = YES;
 				INSTALL_PATH = "$(USER_APPS_DIR)";
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/build/wxMac-2.6/src/build/Deployment";
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MAC_OSX_DEPLOYMENT_TARGET_i386 = 10.4;
 				MAC_OSX_DEPLOYMENT_TARGET_ppc = 10.3;
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
@@ -2707,11 +2728,18 @@
 				OTHER_LDFLAGS = (
 					"-liconv",
 					"-lz",
+					"-lpng",
+					"-lwx_osx_cocoau-3.2",
+					"-ltiff",
+					"-ljpeg",
+					"-lwxscintilla-3.2",
+					"-lwxregexu-3.2",
+					"-lwx_osx_cocoau_gl-3.2",
 				);
 				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.langorigami.TreeMaker;
 				PRODUCT_NAME = "TreeMaker 5";
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
 				SEPARATE_STRIP = YES;
 				STRIP_INSTALLED_PRODUCT = YES;
@@ -2750,13 +2778,16 @@
 				);
 				GCC_VERSION_i386 = 4.0;
 				GCC_VERSION_ppc = 3.3;
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"/Users/guard3/TreeMaker/wxWidgets-3.2.5/include",
+					"/Users/guard3/TreeMaker/wxWidgets-3.2.5/lib/wx/include/osx_cocoa-unicode-static-3.2",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/resources/treemaker.plist";
 				INFOPLIST_PREFIX_HEADER = "$(SRCROOT)/../Source/tmVersion.h";
 				INFOPLIST_PREPROCESS = YES;
 				INSTALL_PATH = "$(USER_APPS_DIR)";
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/build/wxMac-2.6/src/build/Deployment";
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MAC_OSX_DEPLOYMENT_TARGET_i386 = 10.4;
 				MAC_OSX_DEPLOYMENT_TARGET_ppc = 10.3;
 				ONLY_LINK_ESSENTIAL_SYMBOLS = YES;
@@ -2767,10 +2798,17 @@
 				OTHER_LDFLAGS = (
 					"-liconv",
 					"-lz",
+					"-lpng",
+					"-lwx_osx_cocoau-3.2",
+					"-ltiff",
+					"-ljpeg",
+					"-lwxscintilla-3.2",
+					"-lwxregexu-3.2",
+					"-lwx_osx_cocoau_gl-3.2",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.langorigami.TreeMaker;
 				PRODUCT_NAME = "TreeMaker 5";
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
 				USER_HEADER_SEARCH_PATHS = "$(SYMROOT)/wxMac-2.6/include $(SYMROOT)/wxMac-2.6/src/build/include $(SRCROOT)/../Source/** $(SDKROOT)/usr/include/malloc";
 				WARNING_CFLAGS = (

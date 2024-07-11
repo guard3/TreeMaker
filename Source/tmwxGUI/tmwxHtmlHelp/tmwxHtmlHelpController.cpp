@@ -3,7 +3,7 @@ File:         tmwxHtmlHelpController.cpp
 Project:      TreeMaker 5.x
 Purpose:      Implementation file for class tmwxHtmlHelpController
 Author:       Robert J. Lang
-Modified by:  
+Modified by:  Konstantinos Bolosis
 Created:      2005-11-23
 Copyright:    ©2005 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
@@ -46,8 +46,9 @@ wxHtmlHelpFrame* tmwxHtmlHelpController::CreateHelpFrame(wxHtmlHelpData* data)
 Create the help window. Overridden so that on Mac we can replace the menu bar
 of the frame.
 *****/
-void tmwxHtmlHelpController::CreateHelpWindow()
+wxWindow* tmwxHtmlHelpController::CreateHelpWindow()
 {
+#if 0
 #ifdef __WXMAC__
   // Here we simply reproduce the ancestor method, except for the extra call
   // to replace the menu bar partway through.
@@ -71,4 +72,8 @@ void tmwxHtmlHelpController::CreateHelpWindow()
 #else
   wxHtmlHelpController::CreateHelpWindow();
 #endif // __WXMAC__
+#else
+#warning "TODO: Check what's going here"
+    return wxHtmlHelpController::CreateHelpWindow();
+#endif
 }

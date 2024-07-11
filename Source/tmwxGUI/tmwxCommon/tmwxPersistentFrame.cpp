@@ -25,8 +25,10 @@ tmwxPersistentFrame<wxFrame>::tmwxPersistentFrame(const wxString& title,
   wxFrame(NULL, wxID_ANY, title, wxDefaultPosition, wxDefaultSize, style),
   mPositionAndSizeInitialized(false)
 {
+	Bind(wxEVT_MOVE, &tmwxPersistentFrame::OnMove, this);
+	Bind(wxEVT_SIZE, &tmwxPersistentFrame::OnSize, this);
 #if defined(__LINUX__) || defined(__WXMSW__)
-  SetIcon (wxGetApp ().GetAppIcon ());
+	SetIcon (wxGetApp ().GetAppIcon ());
 #endif
 }
 
@@ -41,54 +43,9 @@ tmwxPersistentFrame<tmwxDocParentFrame>::tmwxPersistentFrame(
     wxDefaultSize, style),
   mPositionAndSizeInitialized(false)
 {
+	Bind(wxEVT_MOVE, &tmwxPersistentFrame::OnMove, this);
+	Bind(wxEVT_SIZE, &tmwxPersistentFrame::OnSize, this);
 #if defined(__LINUX__) || defined(__WXMSW__)
   SetIcon (wxGetApp ().GetAppIcon ());
 #endif
 }
-
-/*
-We do our own manual expansion of the BEGIN_EVENT_TABLE() macro because we
-need to sprinkle template<> among the declarations.
-*/
-
-
-/*****
-Event table for tmwxPersistentFrame<wxFrame>
-*****/
-template <>
-const wxEventTable tmwxPersistentFrame<wxFrame>::sm_eventTable =
-    { &wxFrame::sm_eventTable, &tmwxPersistentFrame<wxFrame>::sm_eventTableEntries[0] };
-template <>
-const wxEventTable *tmwxPersistentFrame<wxFrame>::GetEventTable() const
-    { return &tmwxPersistentFrame<wxFrame>::sm_eventTable; }
-template <>
-wxEventHashTable tmwxPersistentFrame<wxFrame>::sm_eventHashTable(tmwxPersistentFrame<wxFrame>::sm_eventTable);
-template <>
-wxEventHashTable &tmwxPersistentFrame<wxFrame>::GetEventHashTable() const
-    { return tmwxPersistentFrame<wxFrame>::sm_eventHashTable; }
-template <>
-const wxEventTableEntry tmwxPersistentFrame<wxFrame>::sm_eventTableEntries[] = {
- EVT_MOVE(tmwxPersistentFrame<wxFrame>::OnMove)
- EVT_SIZE(tmwxPersistentFrame<wxFrame>::OnSize)
-END_EVENT_TABLE()
-
-
-/*****
-Event table for tmwxPersistentFrame<tmwxDocParentFrame>
-*****/
-template <>
-const wxEventTable tmwxPersistentFrame<tmwxDocParentFrame>::sm_eventTable =
-    { &tmwxDocParentFrame::sm_eventTable, &tmwxPersistentFrame<tmwxDocParentFrame>::sm_eventTableEntries[0] };
-template <>
-const wxEventTable *tmwxPersistentFrame<tmwxDocParentFrame>::GetEventTable() const
-    { return &tmwxPersistentFrame<tmwxDocParentFrame>::sm_eventTable; }
-template <>
-wxEventHashTable tmwxPersistentFrame<tmwxDocParentFrame>::sm_eventHashTable(tmwxPersistentFrame<tmwxDocParentFrame>::sm_eventTable);
-template <>
-wxEventHashTable &tmwxPersistentFrame<tmwxDocParentFrame>::GetEventHashTable() const
-    { return tmwxPersistentFrame<tmwxDocParentFrame>::sm_eventHashTable; }
-template <>
-const wxEventTableEntry tmwxPersistentFrame<tmwxDocParentFrame>::sm_eventTableEntries[] = {
-  EVT_MOVE(tmwxPersistentFrame<tmwxDocParentFrame>::OnMove)
-  EVT_SIZE(tmwxPersistentFrame<tmwxDocParentFrame>::OnSize)
-END_EVENT_TABLE()

@@ -3,7 +3,7 @@ File:         tmwxDoc_File.cpp
 Project:      TreeMaker 5.x
 Purpose:      Source file for TreeMaker document class, File menu commands
 Author:       Robert J. Lang
-Modified by:  
+Modified by:  Konstantinos Bolosis
 Created:      2005-12-10
 Copyright:    ©2005 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
@@ -41,6 +41,7 @@ Useful for recording tree structures while version 5 format is in flux.
 *****/
 void tmwxDoc::OnExportv4(wxCommandEvent&)
 {
+#if 0
   wxString pname;
   GetPrintableName(pname);
   wxString pname1 = pname.BeforeLast(wxT('.')); // strip extension
@@ -61,4 +62,7 @@ void tmwxDoc::OnExportv4(wxCommandEvent&)
 #if defined(__WXMAC__)
   wxFileName(fname.fn_str()).MacSetTypeAndCreator('TEXT', 'TrMk');
 #endif // __WXMAC__
+#else
+#warning "TODO: Check what's going on here"
+#endif
 }
