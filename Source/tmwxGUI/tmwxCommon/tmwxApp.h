@@ -51,12 +51,9 @@ class wxServerBase;
 /**********
 Standard alerts
 **********/
-int tmwxAlertError(const wxString& msg, const wxString& caption =
-  wxT("Error"), wxWindow* parent = NULL);
-int tmwxAlertInfo(const wxString& msg, const wxString& caption =
-  wxT("Note"), wxWindow* parent = NULL);
-int tmwxAlertQuery(const wxString& msg, const wxString& caption =
-  wxT("Question"), wxWindow* parent = NULL);
+int tmwxAlertError(const wxString& msg, const wxString& caption = "Error", wxWindow* parent = NULL);
+int tmwxAlertInfo(const wxString& msg, const wxString& caption = "Note", wxWindow* parent = NULL);
+int tmwxAlertQuery(const wxString& msg, const wxString& caption = "Question", wxWindow* parent = NULL);
 
 
 /**********
@@ -190,16 +187,15 @@ enum {
 /*****
 Global variables
 *****/
-extern tmwxApp* gApp;
 extern tmwxDocManager* gDocManager;
 extern tmwxInspectorFrame* gInspectorFrame;
 extern tmwxViewSettingsFrame* gViewSettingsFrame;
 extern tmwxFoldedFormFrame* gFoldedFormFrame;
 #ifdef TM_USE_LOGFRAME
-  extern tmwxLogFrame* gLogFrame;
+extern tmwxLogFrame* gLogFrame;
 #endif // TM_USE_LOGFRAME
 #if wxUSE_ACCEL
-  wxAcceleratorTable tmwxGetAcceleratorTable();
+wxAcceleratorTable tmwxGetAcceleratorTable();
 #endif // wxUSE_ACCEL
 
 
@@ -207,89 +203,88 @@ extern tmwxFoldedFormFrame* gFoldedFormFrame;
 class tmwxApp
 The TreeMaker application
 **********/
-class tmwxApp: public wxApp {
+class tmwxApp : public wxApp {
 public:
-  tmwxApp();
-  virtual bool OnInit();
-  virtual int OnExit();
-  bool ShowSplashScreen();
-  void ShowOptionalAbout();
-  void OnInitCmdLine(wxCmdLineParser& parser);
-  bool OnCmdLineParsed(wxCmdLineParser& parser);
-  bool IsGoodDataFile(wxFileName& datafile, const wxString& descr) const;
+	tmwxApp();
+	bool OnInit() override;
+	int OnExit() override;
+	bool ShowSplashScreen();
+	void ShowOptionalAbout();
+	void OnInitCmdLine(wxCmdLineParser& parser) override;
+	bool OnCmdLineParsed(wxCmdLineParser& parser) override;
+	bool IsGoodDataFile(wxFileName& datafile, const wxString& descr) const;
 
-  static wxMenuBar* MakeMenuBar(wxFrame* aFrame = 0, wxDocument* aDoc = 0);
-  static void SetPalettes(tmwxDoc* doc = NULL);
-  bool IsQuitting() const {return mIsQuitting;};
-  wxPrintData& GetPrintData();
+	static wxMenuBar* MakeMenuBar(wxFrame* aFrame = 0, wxDocument* aDoc = 0);
+	static void SetPalettes(tmwxDoc* doc = NULL);
+	bool IsQuitting() const {return mIsQuitting;};
+	wxPrintData& GetPrintData();
 	wxPageSetupDialogData& GetPageSetupData();
-  
+
 #if defined(__LINUX__) || defined(__WXMSW__)
-  wxIcon GetAppIcon() const { return mConfig.mAppIcon; }
-  wxIcon GetDocIcon() const { return mConfig.mDocIcon; }
+	wxIcon GetAppIcon() const { return mConfig.mAppIcon; }
+	wxIcon GetDocIcon() const { return mConfig.mDocIcon; }
 #endif // defined(__LINUX__) || defined(__WXMSW__)
 
-  virtual void SetActive(bool isActive, wxWindow *lastFocus);
+	 void SetActive(bool isActive, wxWindow *lastFocus) override;
 
   // Event handling
-  bool ProcessEvent(wxEvent& event);
-  
-  // File menu
-  void OnPrintSetup(wxCommandEvent& event); 
-  void OnPreferences(wxCommandEvent& event);
-  void OnQuit(wxCommandEvent& event);
-  
-  // View menu
-  void OnToggleInspectorUpdateUI(wxUpdateUIEvent& event);
-  void OnToggleInspector(wxCommandEvent& event);
-  void OnToggleFoldedFormUpdateUI(wxUpdateUIEvent& event);
-  void OnToggleFoldedForm(wxCommandEvent& event);
-  void OnToggleViewSettingsUpdateUI(wxUpdateUIEvent& event);
-  void OnToggleViewSettings(wxCommandEvent& event);
-  
-  // Debug menu
-  void OnToggleLogUpdateUI(wxUpdateUIEvent& event);
-  void OnToggleLog(wxCommandEvent& event);
-  void OnAppDebugAction1UpdateUI(wxUpdateUIEvent& event);
-  void OnAppDebugAction1(wxCommandEvent& event);
-  
-  // Help menu
-  void OnAboutUpdateUI(wxUpdateUIEvent& event);
-  void OnAbout(wxCommandEvent& event);
-  void OnHelpUpdateUI(wxUpdateUIEvent& event);
-  void OnHelp(wxCommandEvent& event);
+#warning "Check if this function must be overriden"
+	bool ProcessEvent(wxEvent& event) override;
+
+	// File menu
+	void OnPrintSetup(wxCommandEvent& event);
+	void OnPreferences(wxCommandEvent& event);
+	void OnQuit(wxCommandEvent& event);
+
+	// View menu
+	void OnToggleInspectorUpdateUI(wxUpdateUIEvent& event);
+	void OnToggleInspector(wxCommandEvent& event);
+	void OnToggleFoldedFormUpdateUI(wxUpdateUIEvent& event);
+	void OnToggleFoldedForm(wxCommandEvent& event);
+	void OnToggleViewSettingsUpdateUI(wxUpdateUIEvent& event);
+	void OnToggleViewSettings(wxCommandEvent& event);
+
+	// Debug menu
+	void OnToggleLogUpdateUI(wxUpdateUIEvent& event);
+	void OnToggleLog(wxCommandEvent& event);
+	void OnAppDebugAction1UpdateUI(wxUpdateUIEvent& event);
+	void OnAppDebugAction1(wxCommandEvent& event);
+
+	// Help menu
+	void OnAboutUpdateUI(wxUpdateUIEvent& event);
+	void OnAbout(wxCommandEvent& event);
+	void OnHelpUpdateUI(wxUpdateUIEvent& event);
+	void OnHelp(wxCommandEvent& event);
 
 
-  void UpdateUI(wxUpdateUIEvent& event);
-  void On(wxCommandEvent& event);
-  
-  void OnUpdateUI(wxUpdateUIEvent& event);
-  void OnCommand(wxCommandEvent& event);
-  void OnUpdateUIorCommand(int id, bool update, 
-    wxCommandEvent* const cmd_event, wxUpdateUIEvent* const ui_event);
-  DECLARE_EVENT_TABLE()
+	void UpdateUI(wxUpdateUIEvent& event);
+	void On(wxCommandEvent& event);
+
+	void OnUpdateUI(wxUpdateUIEvent& event);
+	void OnCommand(wxCommandEvent& event);
+	void OnUpdateUIorCommand(int id, bool update, wxCommandEvent* const cmd_event, wxUpdateUIEvent* const ui_event);
 private:
-  bool mIsStarting;
-  bool mIsQuitting;
-  wxString mDataDir;
-  tmwxHtmlHelpController* mHelp;
-  wxPrintData* mPrintData;
-  wxPageSetupData* mPageSetupData;
-  struct { // runtime configuration/parameters
-    wxString mInstallDir; // if ! empty, installation directory
-    wxArrayString mArgs; // copy of non-option cmdline arguments
+	bool mIsStarting = true;
+	bool mIsQuitting = false;
+	wxString mDataDir;
+	tmwxHtmlHelpController* mHelp = nullptr;
+	wxPrintData* mPrintData = nullptr;
+	wxPageSetupDialogData* mPageSetupData = nullptr;
+	struct { // runtime configuration/parameters
+		wxString mInstallDir; // if ! empty, installation directory
+		wxArrayString mArgs; // copy of non-option cmdline arguments
 #if defined(__LINUX__) || defined(__WXMSW__)
-    wxIcon mAppIcon; // icon for application top-levels (may be ! Ok())
-    wxIcon mDocIcon; // icon for document frames (may be ! Ok())
+		wxIcon mAppIcon; // icon for application top-levels (may be ! Ok())
+		wxIcon mDocIcon; // icon for document frames (may be ! Ok())
 #endif // defined(__LINUX__) || defined(__WXMSW__)
-  } mConfig;
+	} mConfig;
 #if defined(__WXMSW__)
-  wxSingleInstanceChecker *mChecker; // single instance checker
-  wxServerBase *mIPCserv; // single server for receiving calls from multiple instances
+	wxSingleInstanceChecker *mChecker = nullptr; // single instance checker
+	wxServerBase *mIPCserv = nullptr; // single server for receiving calls from multiple instances
 #endif
 };
 
-DECLARE_APP(tmwxApp)
+wxDECLARE_APP(tmwxApp);
 
 
 /**********
@@ -321,7 +316,7 @@ private:
 
 
 #if wxUSE_DRAG_AND_DROP
-#include "wx/dnd.h"
+#include <wx/dnd.h>
 class tmwxDropTarget : public wxFileDropTarget
 {
 public:

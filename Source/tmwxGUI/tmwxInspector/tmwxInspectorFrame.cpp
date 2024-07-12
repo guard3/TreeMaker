@@ -3,7 +3,7 @@ File:         tmwxInspectorFrame.cpp
 Project:      TreeMaker 5.x
 Purpose:      Implementation file for TreeMaker object inspector frame class
 Author:       Robert J. Lang
-Modified by:  
+Modified by:  Konstantinos Bolosis
 Created:      2003-11-15
 Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
@@ -544,7 +544,7 @@ Attempt to close should only hide the window except at shutdown.
 *****/
 void tmwxInspectorFrame::OnClose(wxCloseEvent& event)
 {
-  if (gApp->IsQuitting())
+  if (wxGetApp().IsQuitting())
     event.Skip();
   else
     if (event.CanVeto()) {

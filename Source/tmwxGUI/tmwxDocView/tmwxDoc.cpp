@@ -3,7 +3,7 @@ File:         tmwxDoc.cpp
 Project:      TreeMaker 5.x
 Purpose:      Source file for TreeMaker document class
 Author:       Robert J. Lang
-Modified by:  
+Modified by:  Konstantinos Bolosis
 Created:      2003-11-15
 Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
@@ -366,7 +366,7 @@ void tmwxDoc::UpdateAllViews(wxView* sender, wxObject* hint)
 #endif
   
   // Also update the floating window palettes.
-  gApp->SetPalettes(this);
+  wxGetApp().SetPalettes(this);
   
   // Also update the scale in the status bar
   gDocManager->GetCurrentViewLocal()->GetDesignFrame()->SetStatusText(

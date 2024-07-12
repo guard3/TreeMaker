@@ -3,7 +3,7 @@ File:         tmwxLogFrame.cpp
 Project:      TreeMaker 5.x
 Purpose:      Implementation file for class tmwxLogFrame
 Author:       Robert J. Lang
-Modified by:  
+Modified by:  Konstantinos Bolosis
 Created:      2005-02-19
 Copyright:    ©2005 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
@@ -108,7 +108,7 @@ Attempt to close should only hide the window except at shutdown.
 *****/
 void tmwxLogFrame::OnClose(wxCloseEvent& event)
 {
-  if (gApp->IsQuitting())
+  if (wxGetApp().IsQuitting())
     event.Skip();
   else
     if (event.CanVeto()) {

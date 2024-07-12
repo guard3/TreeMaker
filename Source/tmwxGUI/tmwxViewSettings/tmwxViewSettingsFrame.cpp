@@ -3,7 +3,7 @@ File:         tmwxViewSettingsFrame.cpp
 Project:      TreeMaker 5.x
 Purpose:      Implementation file for TreeMaker view settings frame
 Author:       Robert J. Lang
-Modified by:  
+Modified by:  Konstantinos Bolosis
 Created:      2004-03-16
 Copyright:    ©2004 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
@@ -100,7 +100,7 @@ Attempt to close should only hide the window except at shutdown.
 *****/
 void tmwxViewSettingsFrame::OnClose(wxCloseEvent& event) 
 {
-  if (gApp->IsQuitting())
+  if (wxGetApp().IsQuitting())
     event.Skip();
   else
     if (event.CanVeto()) {

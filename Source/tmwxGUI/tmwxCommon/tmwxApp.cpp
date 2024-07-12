@@ -54,7 +54,6 @@ Copyright:    ©2003 Robert J. Lang. All Rights Reserved.
 Global objects
 **********/
 
-tmwxApp* gApp = 0;
 tmwxDocManager* gDocManager = 0;
 tmwxInspectorFrame* gInspectorFrame = 0;
 tmwxViewSettingsFrame* gViewSettingsFrame = 0;
@@ -92,20 +91,16 @@ Standard alerts
 /*****
 Alert the user to an error condition
 *****/
-int tmwxAlertError(const wxString& msg, const wxString& caption, 
-  wxWindow* parent)
-{
-  return wxMessageBox(msg, caption, wxOK | wxICON_ERROR, parent);
+int tmwxAlertError(const wxString& msg, const wxString& caption, wxWindow* parent) {
+	return wxMessageBox(msg, caption, wxOK | wxICON_ERROR, parent);
 }
 
 
 /*****
 Provide some explanation to the user of what just happened.
 *****/
-int tmwxAlertInfo(const wxString& msg, const wxString& caption, 
-  wxWindow* parent)
-{
-  return wxMessageBox(msg, caption, wxOK | wxICON_INFORMATION, parent);
+int tmwxAlertInfo(const wxString& msg, const wxString& caption, wxWindow* parent) {
+	return wxMessageBox(msg, caption, wxOK | wxICON_INFORMATION, parent);
 }
 
 
@@ -113,16 +108,9 @@ int tmwxAlertInfo(const wxString& msg, const wxString& caption,
 Query the user to reply yes or no, which will be the return value of the
 function (wxYES | wxNO).
 *****/
-int tmwxAlertQuery(const wxString& msg, const wxString& caption, 
-  wxWindow* parent)
-{
-  return wxMessageBox(msg, caption, wxYES_NO | wxICON_QUESTION, parent);
+int tmwxAlertQuery(const wxString& msg, const wxString& caption, wxWindow* parent) {
+	return wxMessageBox(msg, caption, wxYES_NO | wxICON_QUESTION, parent);
 }
-
-
-#ifdef __MWERKS__
-  #pragma mark -
-#endif
 
 
 /**********
@@ -133,28 +121,40 @@ The TreeMaker application
 /*****
 Preference strings for wxConfig
 *****/
-const wxString SHOW_ABOUT_AT_STARTUP_KEY = wxT("ShowAboutAtStartup");
-const wxString ALGORITHM_KEY = wxT("Algorithm");
+const wxString SHOW_ABOUT_AT_STARTUP_KEY = "ShowAboutAtStartup";
+const wxString ALGORITHM_KEY = "Algorithm";
 
 
 /*****
 Constructor
 *****/
-tmwxApp::tmwxApp() :
-  wxApp(),
-  mIsStarting(true),
-  mIsQuitting(false),
-  mDataDir(wxEmptyString),
-  mHelp(NULL),
-  mPrintData(NULL),
-  mPageSetupData(NULL)
-#ifdef __WXMSW__
-  ,
-  mChecker(NULL),
-  mIPCserv(NULL)
-#endif // __WXMSW__
-{
-  gApp = this;
+tmwxApp::tmwxApp() : wxApp() {
+	// File menu
+	Bind(wxEVT_MENU, &tmwxApp::OnPrintSetup,  this, wxID_PRINT_SETUP);
+	Bind(wxEVT_MENU, &tmwxApp::OnPreferences, this, wxID_PREFERENCES);
+	Bind(wxEVT_MENU, &tmwxApp::OnQuit,        this, wxID_EXIT);
+
+	// Edit menu
+
+	// View menu
+	Bind(wxEVT_UPDATE_UI, &tmwxApp::OnToggleInspectorUpdateUI,    this, tmwxID_TOGGLE_INSPECTOR);
+	Bind(wxEVT_MENU,      &tmwxApp::OnToggleInspector,            this, tmwxID_TOGGLE_INSPECTOR);
+	Bind(wxEVT_UPDATE_UI, &tmwxApp::OnToggleViewSettingsUpdateUI, this, tmwxID_TOGGLE_VIEWSETTINGS);
+	Bind(wxEVT_MENU,      &tmwxApp::OnToggleViewSettings,         this, tmwxID_TOGGLE_VIEWSETTINGS);
+	Bind(wxEVT_UPDATE_UI, &tmwxApp::OnToggleFoldedFormUpdateUI,   this, tmwxID_TOGGLE_FOLDEDFORM);
+	Bind(wxEVT_MENU,      &tmwxApp::OnToggleFoldedForm,           this, tmwxID_TOGGLE_FOLDEDFORM);
+
+#ifdef TMDEBUG
+	// Debug menu
+	Bind(wxEVT_UPDATE_UI, &tmwxApp::OnToggleLogUpdateUI,       this, tmwxID_TOGGLE_LOG);
+	Bind(wxEVT_MENU,      &tmwxApp::OnToggleLog,               this, tmwxID_TOGGLE_LOG);
+	Bind(wxEVT_UPDATE_UI, &tmwxApp::OnAppDebugAction1UpdateUI, this, tmwxID_APP_DEBUG_ACTION_1);
+	Bind(wxEVT_MENU,      &tmwxApp::OnAppDebugAction1,         this, tmwxID_APP_DEBUG_ACTION_1);
+#endif // TMDEBUG
+	
+	// Help menu
+	Bind(wxEVT_MENU, &tmwxApp::OnAbout, this, wxID_ABOUT);
+	Bind(wxEVT_MENU, &tmwxApp::OnHelp,  this, wxID_HELP);
 }
 
 
@@ -1585,38 +1585,4 @@ bool tmwxAboutDialog::TransferDataFromWindow()
 /*****
 Create the application object
 *****/
-IMPLEMENT_APP(tmwxApp)
-
-
-/*****
-Event table
-*****/
-BEGIN_EVENT_TABLE(tmwxApp, wxApp)
-  // File menu
-  EVT_MENU(wxID_PRINT_SETUP, tmwxApp::OnPrintSetup)
-  EVT_MENU(wxID_PREFERENCES, tmwxApp::OnPreferences)
-  EVT_MENU(wxID_EXIT, tmwxApp::OnQuit)
-  
-  // Edit menu
-  
-  // View menu
-  EVT_UPDATE_UI(tmwxID_TOGGLE_INSPECTOR, tmwxApp::OnToggleInspectorUpdateUI)
-  EVT_MENU(tmwxID_TOGGLE_INSPECTOR, tmwxApp::OnToggleInspector) 
-  EVT_UPDATE_UI(tmwxID_TOGGLE_VIEWSETTINGS, tmwxApp::OnToggleViewSettingsUpdateUI)
-  EVT_MENU(tmwxID_TOGGLE_VIEWSETTINGS, tmwxApp::OnToggleViewSettings) 
-  EVT_UPDATE_UI(tmwxID_TOGGLE_FOLDEDFORM, tmwxApp::OnToggleFoldedFormUpdateUI)
-  EVT_MENU(tmwxID_TOGGLE_FOLDEDFORM, tmwxApp::OnToggleFoldedForm) 
-  
-#ifdef TMDEBUG
-  // Debug menu
-  EVT_UPDATE_UI(tmwxID_TOGGLE_LOG, tmwxApp::OnToggleLogUpdateUI)
-  EVT_MENU(tmwxID_TOGGLE_LOG, tmwxApp::OnToggleLog) 
-  EVT_UPDATE_UI(tmwxID_APP_DEBUG_ACTION_1, tmwxApp::OnAppDebugAction1UpdateUI)
-  EVT_MENU(tmwxID_APP_DEBUG_ACTION_1, tmwxApp::OnAppDebugAction1) 
-#endif // TMDEBUG
-  
-  // Help menu
-  EVT_MENU(wxID_ABOUT, tmwxApp::OnAbout)
-  EVT_MENU(wxID_HELP, tmwxApp::OnHelp)
-  
-END_EVENT_TABLE()
+wxIMPLEMENT_APP(tmwxApp);

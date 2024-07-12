@@ -3,7 +3,7 @@ File:         tmwxDocManager.cpp
 Project:      TreeMaker 5.x
 Purpose:      Source file for TreeMaker document manager class
 Author:       Robert J. Lang
-Modified by:  
+Modified by:  Konstantinos Bolosis
 Created:      2005-11-30
 Copyright:    ©2005 Robert J. Lang. All Rights Reserved.
 *******************************************************************************/
@@ -125,10 +125,10 @@ Print the current document.
 void tmwxDocManager::OnPrint(wxCommandEvent& WXUNUSED(event))
 {
   if (!GetCurrentDocumentLocal()) return;
-  wxPrintDialogData printDialogData(gApp->GetPrintData());
+  wxPrintDialogData printDialogData(wxGetApp().GetPrintData());
   wxPrinter printer(&printDialogData);
   tmwxPrintout printout(GetCurrentDocumentLocal()->GetView());
-  if (!printer.Print(gApp->GetTopWindow(), &printout, true)) {
+  if (!printer.Print(wxGetApp().GetTopWindow(), &printout, true)) {
     if (wxPrinter::GetLastError() == wxPRINTER_ERROR)
       // TBD - customize message?
       tmwxAlertError(
@@ -137,7 +137,7 @@ void tmwxDocManager::OnPrint(wxCommandEvent& WXUNUSED(event))
         wxT("Printing Error"));
   } 
   else
-    gApp->GetPrintData() = printer.GetPrintDialogData().GetPrintData();
+    wxGetApp().GetPrintData() = printer.GetPrintDialogData().GetPrintData();
 }
 
 

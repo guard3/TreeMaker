@@ -364,7 +364,7 @@ Attempt to close should only hide the window except at shutdown.
 *****/
 void tmwxFoldedFormFrame::OnClose(wxCloseEvent& event) 
 {
-  if (gApp->IsQuitting())
+  if (wxGetApp().IsQuitting())
     event.Skip();
   else
     if (event.CanVeto()) {

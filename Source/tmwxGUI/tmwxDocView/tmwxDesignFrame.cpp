@@ -85,7 +85,7 @@ Respond to attempt to close a window.
 void tmwxDesignFrame::OnClose(wxCloseEvent& event)
 {
   // Clear the palettes
-  gApp->SetPalettes();
+  wxGetApp().SetPalettes();
   // Continue processing the event
   event.Skip();
   // Let document manager have a chance at quitting the app if this is the
