@@ -5,3 +5,6 @@
 # Other stuff
 wx*
 **/help.zip
+
+.idea
+cmake-*

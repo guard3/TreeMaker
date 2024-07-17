@@ -235,6 +235,7 @@ void tmCheckNaN(const std::vector<double>&);
 #endif /* __cplusplus */
 #else
 #ifdef __cplusplus
+#include <vector>
 inline void tmCheckNaN(float) noexcept {}
 inline void tmCheckNaN(double) noexcept {}
 inline void tmCheckNaN(const std::vector<float>&) noexcept {}
