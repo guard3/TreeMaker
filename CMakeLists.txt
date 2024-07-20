@@ -34,9 +34,18 @@ add_executable(tmNewtonRaphsonTester
 	Source/tmModel/tmPtrClasses/tmDpptrTarget.cpp
 	Source/test/tmNewtonRaphsonTester.cpp
 )
-add_executable(TreeMaker
-	Source/tmqtGUI/main.cpp
-)
 
-find_package(Qt6 COMPONENTS Core Gui Widgets REQUIRED)
-target_link_libraries(TreeMaker Qt::Core Qt::Gui Qt::Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
+qt_add_executable(TreeMaker Source/tmqtGUI/main.cpp
+	Source/tmqtGUI/tmqtSplashScreen.h
+	Source/tmqtGUI/tmqtSplashScreen.cpp
+	Source/tmqtGUI/tmqtMainWindow.cpp
+	Source/tmqtGUI/tmqtMainWindow.h
+	Source/tmqtGUI/tmqtMainWindow.ui)
+target_link_libraries(TreeMaker PRIVATE Qt::Widgets)
+
+qt_add_resources(TreeMaker imageresources
+	BASE Source
+	FILES Source/images/SplashScreen.png
+)
+set_target_properties(TreeMaker PROPERTIES WIN32_EXECUTABLE ON MACOSX_BUNDLE ON)

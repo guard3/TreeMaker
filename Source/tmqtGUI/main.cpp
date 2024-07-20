@@ -1,10 +1,18 @@
+#include "tmqtMainWindow.h"
+#include "tmqtSplashScreen.h"
 #include <QApplication>
-#include <QPushButton>
+#include <QTimer>
+#include <QMenuBar>
 
 int main(int argc, char *argv[]) {
-	QApplication a(argc, argv);
-	QPushButton button("Hello world!", nullptr);
-	button.resize(200, 100);
-	button.show();
-	return QApplication::exec();
+	using namespace std::chrono_literals;
+	QApplication app(argc, argv);
+	/* Show a splashscreen early on */
+	tmqtSplashScreen splash;
+	splash.show();
+	/* Show main window */
+	tmqtMainWindow window;
+	splash.finish(&window);
+	QTimer::singleShot(1s, &window, &tmqtMainWindow::show);
+	return app.exec();
 }

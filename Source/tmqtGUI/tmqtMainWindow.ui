@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>tmqtMainWindow</class>
+ <widget class="QMainWindow" name="tmqtMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>tmqtMainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionClose"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSaveAs"/>
+    <addaction name="actionRevert"/>
+    <addaction name="separator"/>
+    <addaction name="actionPrint"/>
+    <addaction name="separator"/>
+    <addaction name="actionSettings"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="separator"/>
+    <addaction name="actionHelp"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <widget class="QMenu" name="menuSelect">
+     <property name="title">
+      <string>Select</string>
+     </property>
+     <addaction name="actionPart_by_Index"/>
+     <addaction name="actionSelectAll"/>
+     <addaction name="actionDeselect"/>
+     <addaction name="actionMovable_Parts"/>
+     <addaction name="actionPath_from_Nodes"/>
+     <addaction name="actionCorridor_Facets"/>
+    </widget>
+    <widget class="QMenu" name="menuNodes">
+     <property name="title">
+      <string>Nodes</string>
+     </property>
+     <addaction name="actionMake_Root"/>
+     <addaction name="actionPerturb_Selected"/>
+     <addaction name="actionPerturb_All"/>
+    </widget>
+    <widget class="QMenu" name="menuEdges">
+     <property name="title">
+      <string>Edges</string>
+     </property>
+     <addaction name="actionSet_Lengths"/>
+     <addaction name="actionScale_Lengths"/>
+     <addaction name="actionRenormalize_to_Selection"/>
+     <addaction name="actionRenormalize_All_to_Unit_Scale"/>
+    </widget>
+    <widget class="QMenu" name="menuAbsorb">
+     <property name="title">
+      <string>Absorb</string>
+     </property>
+     <addaction name="actionSelected_Nodes"/>
+     <addaction name="actionRedundant_Nodes"/>
+     <addaction name="actionSelected_Edges"/>
+    </widget>
+    <widget class="QMenu" name="menuSplit">
+     <property name="title">
+      <string>Split</string>
+     </property>
+     <addaction name="actionSelected_Edge"/>
+    </widget>
+    <widget class="QMenu" name="menuStrain">
+     <property name="title">
+      <string>Strain</string>
+     </property>
+     <addaction name="actionRemove_Selection"/>
+     <addaction name="actionRemove_All"/>
+     <addaction name="actionRelieve_Selection"/>
+     <addaction name="actionRelieve_All"/>
+    </widget>
+    <widget class="QMenu" name="menuStub">
+     <property name="title">
+      <string>Stub</string>
+     </property>
+     <addaction name="actionPick_for_Nodes"/>
+     <addaction name="actionPick_for_Poly"/>
+     <addaction name="actionAdd_Largest_to_Nodes"/>
+     <addaction name="actionAdd_Largest_to_Poly"/>
+     <addaction name="actionTriangulate_Tree"/>
+    </widget>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+    <addaction name="separator"/>
+    <addaction name="actionCut"/>
+    <addaction name="actionCopy"/>
+    <addaction name="actionPaste"/>
+    <addaction name="actionClear"/>
+    <addaction name="separator"/>
+    <addaction name="menuSelect"/>
+    <addaction name="menuNodes"/>
+    <addaction name="menuEdges"/>
+    <addaction name="menuAbsorb"/>
+    <addaction name="menuSplit"/>
+    <addaction name="menuStrain"/>
+    <addaction name="menuStub"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>&amp;View</string>
+    </property>
+    <addaction name="actionInspector"/>
+    <addaction name="actionView_Settings"/>
+    <addaction name="actionFolded_Form"/>
+    <addaction name="separator"/>
+    <addaction name="actionTree_View"/>
+    <addaction name="actionDesign_View"/>
+    <addaction name="actionCreases_View"/>
+    <addaction name="actionPlan_View"/>
+    <addaction name="separator"/>
+    <addaction name="actionFit_to_Screen"/>
+    <addaction name="actionFit_to_Width"/>
+    <addaction name="actionFit_to_Height"/>
+    <addaction name="actionSet_Paper_Size"/>
+   </widget>
+   <widget class="QMenu" name="menuAction">
+    <property name="title">
+     <string>&amp;Action</string>
+    </property>
+    <addaction name="actionScale_Everything"/>
+    <addaction name="actionScale_Selection"/>
+    <addaction name="actionMinimize_Strain"/>
+    <addaction name="separator"/>
+    <addaction name="actionBuild_Crease_Pattern"/>
+    <addaction name="actionKill_Create_Pattern"/>
+   </widget>
+   <widget class="QMenu" name="menuCondition">
+    <property name="title">
+     <string>&amp;Condition</string>
+    </property>
+    <addaction name="actionNode_s_Fixed_to_Symmetry_Line"/>
+    <addaction name="actionNode_s_Fixed_to_Paper_Edge"/>
+    <addaction name="actionNode_s_Fixed_to_Corner"/>
+    <addaction name="actionNode_s_Fixed_to_Position"/>
+    <addaction name="action2_Nodes_Paired_about_Symmetry_Line"/>
+    <addaction name="action3_Nodes_Collinear"/>
+    <addaction name="actionRemove_All_Node_Conditions"/>
+    <addaction name="separator"/>
+    <addaction name="actionEdge_s_No_Strain"/>
+    <addaction name="action2_Edges_Same_Strain"/>
+    <addaction name="actionRemove_All_Edge_Conditions"/>
+    <addaction name="separator"/>
+    <addaction name="actionPath_Active"/>
+    <addaction name="actionPath_Angle_Fixed"/>
+    <addaction name="actionPath_Angle_Quantized"/>
+    <addaction name="actionRemove_All_Path_Conditions"/>
+    <addaction name="separator"/>
+    <addaction name="actionRemove_All_Conditions"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuView"/>
+   <addaction name="menuAction"/>
+   <addaction name="menuCondition"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew">
+   <property name="text">
+    <string>&amp;New</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>&amp;Open...</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+X</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::QuitRole</enum>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="text">
+    <string>&amp;Help</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>&amp;Close</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>&amp;Save</string>
+   </property>
+  </action>
+  <action name="actionSaveAs">
+   <property name="text">
+    <string>Save &amp;As...</string>
+   </property>
+  </action>
+  <action name="actionRevert">
+   <property name="text">
+    <string>Revert</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="text">
+    <string>&amp;Print</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="text">
+    <string>&amp;Undo</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="text">
+    <string>&amp;Redo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="text">
+    <string>Cut</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="text">
+    <string>Copy</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="text">
+    <string>Paste</string>
+   </property>
+  </action>
+  <action name="actionClear">
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </action>
+  <action name="actionPart_by_Index">
+   <property name="text">
+    <string>Part by Index...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+J</string>
+   </property>
+  </action>
+  <action name="actionSelectAll">
+   <property name="text">
+    <string>All</string>
+   </property>
+  </action>
+  <action name="actionDeselect">
+   <property name="text">
+    <string>None</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+A</string>
+   </property>
+  </action>
+  <action name="actionMovable_Parts">
+   <property name="text">
+    <string>Movable Parts</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+A</string>
+   </property>
+  </action>
+  <action name="actionPath_from_Nodes">
+   <property name="text">
+    <string>Path from Nodes</string>
+   </property>
+  </action>
+  <action name="actionCorridor_Facets">
+   <property name="text">
+    <string>Corridor Facets</string>
+   </property>
+  </action>
+  <action name="actionSelect_2">
+   <property name="text">
+    <string>Select</string>
+   </property>
+  </action>
+  <action name="actionMake_Root">
+   <property name="text">
+    <string>Make Root</string>
+   </property>
+  </action>
+  <action name="actionPerturb_Selected">
+   <property name="text">
+    <string>Perturb Selected</string>
+   </property>
+  </action>
+  <action name="actionPerturb_All">
+   <property name="text">
+    <string>Perturb All</string>
+   </property>
+  </action>
+  <action name="actionSet_Lengths">
+   <property name="text">
+    <string>Set Lengths...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionScale_Lengths">
+   <property name="text">
+    <string>Scale Lengths...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+E</string>
+   </property>
+  </action>
+  <action name="actionRenormalize_to_Selection">
+   <property name="text">
+    <string>Renormalize to Selection</string>
+   </property>
+  </action>
+  <action name="actionRenormalize_All_to_Unit_Scale">
+   <property name="text">
+    <string>Renormalize All to Unit Scale</string>
+   </property>
+  </action>
+  <action name="actionSelected_Nodes">
+   <property name="text">
+    <string>Selected Nodes</string>
+   </property>
+  </action>
+  <action name="actionRedundant_Nodes">
+   <property name="text">
+    <string>Redundant Nodes</string>
+   </property>
+  </action>
+  <action name="actionSelected_Edges">
+   <property name="text">
+    <string>Selected Edges</string>
+   </property>
+  </action>
+  <action name="actionSelected_Edge">
+   <property name="text">
+    <string>Selected Edge...</string>
+   </property>
+  </action>
+  <action name="actionRemove_Selection">
+   <property name="text">
+    <string>Remove Selection</string>
+   </property>
+  </action>
+  <action name="actionRemove_All">
+   <property name="text">
+    <string>Remove All</string>
+   </property>
+  </action>
+  <action name="actionRelieve_Selection">
+   <property name="text">
+    <string>Relieve Selection</string>
+   </property>
+  </action>
+  <action name="actionRelieve_All">
+   <property name="text">
+    <string>Relieve All</string>
+   </property>
+  </action>
+  <action name="actionPick_for_Nodes">
+   <property name="text">
+    <string>Pick for Nodes...</string>
+   </property>
+  </action>
+  <action name="actionPick_for_Poly">
+   <property name="text">
+    <string>Pick for Poly...</string>
+   </property>
+  </action>
+  <action name="actionAdd_Largest_to_Nodes">
+   <property name="text">
+    <string>Add Largest to Nodes</string>
+   </property>
+  </action>
+  <action name="actionAdd_Largest_to_Poly">
+   <property name="text">
+    <string>Add Largest to Poly</string>
+   </property>
+  </action>
+  <action name="actionTriangulate_Tree">
+   <property name="text">
+    <string>Triangulate Tree</string>
+   </property>
+  </action>
+  <action name="actionInspector">
+   <property name="text">
+    <string>Inspector</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionView_Settings">
+   <property name="text">
+    <string>View Settings</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="actionFolded_Form">
+   <property name="text">
+    <string>Folded Form</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionTree_View">
+   <property name="text">
+    <string>Tree View</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+T</string>
+   </property>
+  </action>
+  <action name="actionDesign_View">
+   <property name="text">
+    <string>Design View</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+D</string>
+   </property>
+  </action>
+  <action name="actionCreases_View">
+   <property name="text">
+    <string>Creases View</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+C</string>
+   </property>
+  </action>
+  <action name="actionPlan_View">
+   <property name="text">
+    <string>Plan View</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+P</string>
+   </property>
+  </action>
+  <action name="actionFit_to_Screen">
+   <property name="text">
+    <string>Fit to Screen</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+F</string>
+   </property>
+  </action>
+  <action name="actionFit_to_Width">
+   <property name="text">
+    <string>Fit to Width</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+W</string>
+   </property>
+  </action>
+  <action name="actionFit_to_Height">
+   <property name="text">
+    <string>Fit to Height</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+H</string>
+   </property>
+  </action>
+  <action name="actionSet_Paper_Size">
+   <property name="text">
+    <string>Set Paper Size...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+Y</string>
+   </property>
+  </action>
+  <action name="actionScale_Everything">
+   <property name="text">
+    <string>Scale Everything</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+1</string>
+   </property>
+  </action>
+  <action name="actionScale_Selection">
+   <property name="text">
+    <string>Scale Selection</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+2</string>
+   </property>
+  </action>
+  <action name="actionMinimize_Strain">
+   <property name="text">
+    <string>Minimize Strain</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+3</string>
+   </property>
+  </action>
+  <action name="actionBuild_Crease_Pattern">
+   <property name="text">
+    <string>Build Crease Pattern</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+4</string>
+   </property>
+  </action>
+  <action name="actionKill_Create_Pattern">
+   <property name="text">
+    <string>Kill Create Pattern</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+4</string>
+   </property>
+  </action>
+  <action name="actionNode_s_Fixed_to_Symmetry_Line">
+   <property name="text">
+    <string>Node(s) Fixed to Symmetry Line</string>
+   </property>
+  </action>
+  <action name="actionNode_s_Fixed_to_Paper_Edge">
+   <property name="text">
+    <string>Node(s) Fixed to Paper Edge</string>
+   </property>
+  </action>
+  <action name="actionNode_s_Fixed_to_Corner">
+   <property name="text">
+    <string>Node(s) Fixed to Corner</string>
+   </property>
+  </action>
+  <action name="actionNode_s_Fixed_to_Position">
+   <property name="text">
+    <string>Node(s) Fixed to Position...</string>
+   </property>
+  </action>
+  <action name="action2_Nodes_Paired_about_Symmetry_Line">
+   <property name="text">
+    <string>2 Nodes Paired about Symmetry Line</string>
+   </property>
+  </action>
+  <action name="action3_Nodes_Collinear">
+   <property name="text">
+    <string>3 Nodes Collinear</string>
+   </property>
+  </action>
+  <action name="actionRemove_All_Node_Conditions">
+   <property name="text">
+    <string>Remove All Node Conditions</string>
+   </property>
+  </action>
+  <action name="actionEdge_s_No_Strain">
+   <property name="text">
+    <string>Edge(s) No Strain</string>
+   </property>
+  </action>
+  <action name="action2_Edges_Same_Strain">
+   <property name="text">
+    <string>2 Edges Same Strain</string>
+   </property>
+  </action>
+  <action name="actionRemove_All_Edge_Conditions">
+   <property name="text">
+    <string>Remove All Edge Conditions</string>
+   </property>
+  </action>
+  <action name="actionPath_Active">
+   <property name="text">
+    <string>Path Active</string>
+   </property>
+  </action>
+  <action name="actionPath_Angle_Fixed">
+   <property name="text">
+    <string>Path Angle Fixed...</string>
+   </property>
+  </action>
+  <action name="actionPath_Angle_Quantized">
+   <property name="text">
+    <string>Path Angle Quantized...</string>
+   </property>
+  </action>
+  <action name="actionRemove_All_Path_Conditions">
+   <property name="text">
+    <string>Remove All Path Conditions</string>
+   </property>
+  </action>
+  <action name="actionRemove_All_Conditions">
+   <property name="text">
+    <string>Remove All Conditions</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
