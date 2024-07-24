@@ -9,6 +9,7 @@ Copyright:    ©2024 Konstantinos Bolosis. All Rights Reserved.
 *******************************************************************************/
 
 #include "tmqtMainWindow.h"
+#include "tmqtAboutDialog.h"
 #include "ui_tmqtMainWindow.h"
 
 
@@ -35,6 +36,10 @@ tmqtMainWindow::tmqtMainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui
 	ui->actionHelp->setShortcut(QKeySequence::HelpContents);
 	/* Quit app when 'Exit' is clicked */
 	connect(ui->actionExit, &QAction::triggered, qApp, &QApplication::quit);
+	connect(ui->actionAbout, &QAction::triggered, this, [this]() {
+		tmqtAboutDialog dialog(this);
+		dialog.exec();
+	});
 }
 
 tmqtMainWindow::~tmqtMainWindow() {
