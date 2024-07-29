@@ -11,15 +11,15 @@ Copyright:    ©2024 Konstantinos Bolosis. All Rights Reserved.
 #ifndef TREEMAKER_TMQTMAINWINDOW_H
 #define TREEMAKER_TMQTMAINWINDOW_H
 
+#include "tmqtCommon.h"
 #include <QMainWindow>
-
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class tmqtMainWindow; }
 QT_END_NAMESPACE
 
 class tmqtMainWindow : public QMainWindow {
-Q_OBJECT
+	Q_OBJECT
 
 public:
 	explicit tmqtMainWindow(QWidget *parent = nullptr);
@@ -29,6 +29,4 @@ public:
 private:
 	Ui::tmqtMainWindow *ui;
 };
-
-
-#endif //TREEMAKER_TMQTMAINWINDOW_H
+#endif /* TREEMAKER_TMQTMAINWINDOW_H */

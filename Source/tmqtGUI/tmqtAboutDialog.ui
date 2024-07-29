@@ -2,9 +2,6 @@
 <ui version="4.0">
  <class>tmqtAboutDialog</class>
  <widget class="QDialog" name="tmqtAboutDialog">
-  <property name="enabled">
-   <bool>true</bool>
-  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -33,16 +30,7 @@
     <number>10</number>
    </property>
    <item alignment="Qt::AlignmentFlag::AlignHCenter">
-    <widget class="QLabel" name="labelAbout">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
+    <widget class="QLabel" name="label">
      <property name="font">
       <font>
        <bold>true</bold>
@@ -59,23 +47,20 @@
       <enum>QFrame::Shape::NoFrame</enum>
      </property>
      <property name="textInteractionFlags">
-      <set>Qt::TextInteractionFlag::NoTextInteraction</set>
+      <set>Qt::TextInteractionFlag::LinksAccessibleByKeyboard|Qt::TextInteractionFlag::LinksAccessibleByMouse</set>
      </property>
      <property name="source">
       <url>
        <string>qrc:/about/about.htm</string>
       </url>
      </property>
+     <property name="openExternalLinks">
+      <bool>true</bool>
+     </property>
     </widget>
    </item>
    <item alignment="Qt::AlignmentFlag::AlignHCenter">
     <widget class="QCheckBox" name="checkBox">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
      <property name="text">
       <string>Show this window at startup</string>
      </property>
@@ -89,18 +74,9 @@
     </widget>
    </item>
    <item alignment="Qt::AlignmentFlag::AlignHCenter">
-    <widget class="QDialogButtonBox" name="buttonBox">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
+    <widget class="QDialogButtonBox" name="dialogButtonBox">
      <property name="standardButtons">
       <set>QDialogButtonBox::StandardButton::Ok</set>
-     </property>
-     <property name="centerButtons">
-      <bool>true</bool>
      </property>
     </widget>
    </item>

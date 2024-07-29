@@ -10,8 +10,9 @@ Copyright:    ©2024 Konstantinos Bolosis. All Rights Reserved.
 
 #ifndef TREEMAKER_TMQTSPLASHSCREEN_H
 #define TREEMAKER_TMQTSPLASHSCREEN_H
+
+#include "tmqtCommon.h"
 #include <QSplashScreen>
-#include "tmHeader.h"
 
 class tmqtSplashScreen final : public QSplashScreen {
 	void mousePressEvent(QMouseEvent*) override;
@@ -19,5 +20,4 @@ class tmqtSplashScreen final : public QSplashScreen {
 public:
 	tmqtSplashScreen();
 };
-
 #endif /* TREEMAKER_TMQTSPLASHSCREEN_H */

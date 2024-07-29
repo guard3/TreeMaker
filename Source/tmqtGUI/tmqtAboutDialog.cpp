@@ -12,16 +12,19 @@ Copyright:    ©2024 Konstantinos Bolosis. All Rights Reserved.
 #include "tmqtAboutDialog.h"
 #include "ui_tmqtAboutDialog.h"
 
-
 tmqtAboutDialog::tmqtAboutDialog(QWidget* parent) : QDialog(parent), ui(new Ui::tmqtAboutDialog) {
 	ui->setupUi(this);
 #ifdef Q_OS_MACOS
 	/* The checkbox must ignore the layout rect on macOS because, for some reason, it breaks the layout margins */
 	ui->checkBox->setAttribute(Qt::WA_LayoutUsesWidgetRect);
 #endif
-	ui->labelAbout->setText(TM_APP_ABOUT_NAME_STR);
+	ui->checkBox->setChecked(tmqtGlobals::settings().value(tmqtKey::ShowAboutAtStartup, true).toBool());
+	ui->label->setText(TM_APP_ABOUT_NAME_STR);
 	setFixedSize(640, 560);
-	connect(ui->buttonBox, &QDialogButtonBox::clicked, this, &tmqtAboutDialog::close);
+	connect(ui->dialogButtonBox, &QDialogButtonBox::clicked, this, &tmqtAboutDialog::close);
+	connect(ui->checkBox, &QCheckBox::checkStateChanged, this, [](Qt::CheckState e) {
+		tmqtGlobals::settings().setValue(tmqtKey::ShowAboutAtStartup, e == Qt::Checked);
+	});
 }
 
 tmqtAboutDialog::~tmqtAboutDialog() {

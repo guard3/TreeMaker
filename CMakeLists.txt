@@ -38,7 +38,8 @@ add_executable(tmNewtonRaphsonTester
 
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 qt_add_executable(TreeMaker
-	Source/tmqtGUI/main.cpp
+	Source/tmqtGUI/tmqtCommon.h
+	Source/tmqtGUI/tmqtMain.cpp
 	Source/tmqtGUI/tmqtSplashScreen.h
 	Source/tmqtGUI/tmqtSplashScreen.cpp
 	Source/tmqtGUI/tmqtMainWindow.cpp

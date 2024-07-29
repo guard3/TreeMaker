@@ -11,6 +11,7 @@ Copyright:    ©2024 Konstantinos Bolosis. All Rights Reserved.
 #ifndef TREEMAKER_TMQTABOUTDIALOG_H
 #define TREEMAKER_TMQTABOUTDIALOG_H
 
+#include "tmqtCommon.h"
 #include <QDialog>
 
 QT_BEGIN_NAMESPACE
@@ -28,6 +29,4 @@ public:
 private:
 	Ui::tmqtAboutDialog *ui;
 };
-
-
-#endif //TREEMAKER_TMQTABOUTDIALOG_H
+#endif /* TREEMAKER_TMQTABOUTDIALOG_H */
